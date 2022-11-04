@@ -1,0 +1,180 @@
+:root {
+  --black-white: #000;
+  --gray-hover: hsla(0, 0%, 0%, 0.06);
+  --light-dark: #fff;
+}
+
+.dark-theme {
+  --black-white: #fff;
+}
+
+html,
+body {
+  font-family: poppins;
+  letter-spacing: 0.5px;
+}
+
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  width: 100%;
+  padding-top: 5rem;
+}
+
+/* H2 as Title of Section */
+h2 {
+  font-size: 33px;
+  font-weight: bold;
+  color: var(--black-white);
+  margin-bottom: 3rem;
+}
+
+/* ==================== NAVBAR =================== */
+nav {
+  background: var(--light-dark);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 1px -2px,
+    rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
+}
+
+.navitem {
+  color: var(--black-white);
+}
+
+.navitem:hover {
+  color: var(--black-white);
+  background: var(--gray-hover);
+}
+
+.navbar-toggler-icons {
+  color: var(--black-white);
+}
+/* ==================== END =================== */
+
+/* ==================== HOME =================== */
+.home-search {
+  width: 70%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 1px 7px -2px;
+}
+
+.home-search-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 70%;
+  display: inline-block;
+}
+
+.btn-modal {
+  color: var(--black-white);
+  text-decoration: none;
+}
+
+.btn-modal:hover,
+.btn-modal:active,
+.btn-modal:focus {
+  color: var(--black-white);
+}
+
+.btn-modal-close {
+  padding: 0;
+  left: 20px;
+  border: 0;
+  background: none;
+}
+
+.home-contact-icon {
+  color: var(--black-white);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.home-contact-icon:hover {
+  color: var(--black-white);
+  text-decoration: underline;
+}
+/* ==================== END =================== */
+
+/* ==================== ABOUT =================== */
+.about-image {
+  width: 100%;
+}
+
+.about-text {
+  font-size: 1em;
+  line-height: 27px;
+}
+/* ==================== END =================== */
+
+/* ==================== SKILLS =================== */
+.skills-icon {
+  font-size: 70px;
+}
+/* ==================== END =================== */
+
+/* ==================== PROJECT =================== */
+.project-title-small {
+  font-size: 20px;
+}
+
+.project-card img {
+  position: relative;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.project-card:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.project-card-date {
+  font-size: 13px;
+}
+
+.project-card-body h3 {
+  color: var(--black-white);
+}
+
+.project-card-icon a {
+  color: var(--black-white);
+}
+/* ==================== END =================== */
+
+/* ==================== MEDIA QUERY =================== */
+@media (max-width: 769px) {
+  .nav-item {
+    margin-right: 0 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  /* H2 as Title of Section */
+  h2 {
+    font-size: 25px;
+  }
+
+  .home-search {
+    width: 100%;
+  }
+
+  .home-search-text {
+    max-width: 80%;
+  }
+
+  .about-text {
+    font-size: 0.8em;
+    line-height: 23px;
+  }
+
+  .project-title-small {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS BOOTSTRAP 5.2.0 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+  </script>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+    integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css"
+    integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!--=============== CUSTOM FONTS ===============-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet" />
+
+  <title>Folio</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar nav-container fixed-top navbar-expand-md navbar-dark">
+      <div class="container pt-0">
+        <a class="navbar-brand fs-3 rounded fw-bold navbrand" href=""><span class="text-primary">F</span><span
+            class="text-danger">o</span><span class="text-warning">l</span><span class="text-primary">i</span><span
+            class="text-success">o</span>
+        </a>
+
+        <button class="navbar-toggler shadow-none fs-6 p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="assets/img/danu.jpg" alt="Logo" width="30" height="30" class="rounded-circle">
+          <span class="navbar-toggler-icons fa-solid fa-bars-staggered"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <hr class="mt-2" />
+          <ul class="navbar-nav text-center">
+            <li class="nav-item px-2">
+              <!-- TEMA DARK-LIGHT BUTTON -->
+              <div class="dark fs-5" id="dark">
+                <i class="bx bxs-moon change-theme" id="theme-button"></i>
+              </div>
+              <!-- END -->
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link navitem rounded" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link navitem rounded" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item me-1">
+              <a class="nav-link navitem rounded" aria-current="page" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navitem rounded" aria-current="page" href="#project">Project</a>
+            </li>
+            <!--<hr>-->
+          </ul>
+          <hr />
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="text-center">
+      <div class="container">
+        <div class="row col-lg d-flex justify-content-center p-3 pt-4">
+          <h1 class="home-title display-3 fw-bold mt-4 mb-5">Danu <span class="text-primary">P</span><span
+              class="text-danger">r</span><span class="text-warning">a</span><span class="text-primary">t</span><span
+              class="text-success">a</span><span class="text-danger">m</span><span class="text-warning">a</span></h1>
+
+          <div class="d-flex justify-content-between home-search p-3 px-4 mb-5 rounded-5">
+            <span class="home-search-text"><i class="fa-solid fa-search me-3"></i>danupratama.site</span>
+            <span>
+              <i class="fa-solid fa-microphone me-1"></i>
+              <i class="fa-solid fa-camera"></i>
+            </span>
+          </div>
+
+          <!-- MODAL CONTACT -->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-link btn-modal shadow-none mb-5" data-bs-toggle="modal"
+            data-bs-target="#modalContact">
+            Contact & Socials <i class="fa-solid fa-angle-down"></i>
+          </button>
+
+          <div class="modal fade" id="modalContact" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content border-0">
+                <div class="modal-header justify-content-center">
+                  <h5 class="modal-title"><span class="text-primary">C</span><span class="text-danger">o</span><span
+                      class="text-warning">n</span><span class="text-primary">t</span><span
+                      class="text-success">a</span><span class="text-danger">c</span><span class="text-warning">t</span>
+                  </h5>
+
+                  <button type="button" class="btn-modal-close position-absolute text-secondary" data-bs-dismiss="modal"
+                    aria-label="Close"><i class="fa-solid fa-xmark fs-5"></i></button>
+                </div>
+                <div class="modal-body d-grid">
+                  <li class="mb-3 d-grid text-start list-unstyled">
+                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
+                      href="https://linktr.ee/danupratama" target="_blank"><i
+                        class="fa-solid fa-globe ps-0 p-3"></i>Portfolio<span class="vr mx-2"></span><small
+                        class="text-secondary">https://linktr.ee/danupratama</small></a>
+
+                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
+                      href="https://github.com/danuapratama" target="_blank"><i
+                        class="fa-brands fa-github ps-0 p-3"></i>GitHub<span class="vr mx-2"></span><small
+                        class="text-secondary">https://github.com/danuapratama</small></a>
+
+                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
+                      href="mailto:danupratama.dev@gmail.com" target="_blank"><i
+                        class="fa-solid fa-envelope ps-0 p-3"></i>E-mail<span class="vr mx-2"></span><small
+                        class="text-secondary">danupratama.dev@gmail.com</small></a>
+
+                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
+                      href="https://instagram.com/danuapratama" target="_blank"><i
+                        class="fa-brands fa-instagram ps-0 p-3"></i>Instagram<span class="vr mx-2"></span><small
+                        class="text-secondary">danuapratama</small></a>
+                  </li>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL END -->
+
+          <!-- <span class="home-subtitle col-lg-6 mb-4 fs-6 px-3"></span> -->
+          <div class="mx-auto">
+            <a href="#project"
+              class="home-btn btn fs-6 pt-3 pb-3 px-5 fw-bold border-0 bg-secondary bg-opacity-10 rounded-3">VIEW
+              PROJECT</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img class="about-image mb-4 rounded-3" src="assets/img/danu.jpg" alt="Belajar Coding Indonesia" />
+          </div>
+
+          <div class="row col-lg-8 text-start">
+            <span class="about-title fw-bold fs-1 pb-0 mb-3">Who am I</span>
+            <p class="about-text">I believe that Portfolio should not be about me, but about the things I do with the
+              expertise I have, so you can see my work. In the end, only that matters. But if you really would like to
+              know me more here it is
+              <br>
+              <br>
+              My name is Danu A. Pratama. I am an active student from a university with an informatics engineering study
+              program based in Jakarta, Indonesia. I am interested in programming, especially when it comes to web
+              development. This website is a portfolio that I have been working on starting in 2021 and will continue to
+              improve as I increase my knowledge and skills in the field of front-end web development. I am looking to
+              collaborate on amazing projects in the future and be part of an incredible team.
+              <br>
+              <br>
+              Best,
+              <br>
+              Danu
+            </p>
+            <!-- <span class="home-subtitle col-lg-6 mb-4 fs-6 px-3"></span> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="text-center">
+      <div class="container">
+        <h2 class="skills-title">Skills & Tools</h2>
+        <div class="row skills-icon">
+          <span class="col-md-2 col-sm-4 col-6">
+            <i class='fa-brands fa-html5 text-secondary' title="HTML"></i>
+          </span>
+          <span class="col-md-2 col-sm-4 col-6">
+            <i class='fa-brands fa-css3-alt text-secondary' title="CSS"></i>
+          </span>
+          <span class="col-md-2 col-sm-4 col-6">
+            <i class='fa-brands fa-square-js text-secondary' title="JavaScript"></i>
+          </span>
+          <span class="col-md-2 col-sm-4 col-6">
+            <i class='fa-brands fa-bootstrap text-secondary' title="Bootstrap"></i>
+          </span>
+          <span class="col-md-2 col-sm-4 col-6">
+            <i class='fa-brands fa-php text-secondary' title="PHP"></i>
+          </span>
+          <span class="col-md-2 col-sm-4 col-6">
+            <i class='fa-brands fa-github text-secondary' title="GitHub"></i>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="text-center">
+      <div class="container">
+        <h2 class="project-title mb-2">My Project</h2>
+        <span class="project-title-small">Any questions? Check out the Faq</span>
+
+        <div id="" class="row justify-content-start mt-5">
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100 project-card p-2 rounded-3">
+              <div class="overflow-hidden rounded-top">
+                <img src="assets/img/9.png" class="card-img-top" alt="blog">
+              </div>
+              <div class="card-body project-card-body p-0 pt-2 text-start">
+                <span class="text-secondary project-card-date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  09-10-2022<i class="fa-solid fa-bookmark ms-2"></i>
+                  Web Development
+                </span>
+                <h3 class="card-title mt-3 mb-2 fs-6 fw-bold">E-Commerce v.2</h3>
+                <!-- <small class="project-card-description mb-3"><p>Kamu mau membuat website? Sebelum...</small> -->
+                <span class="d-block text-end project-card-icon p-2 fs-5">
+                  <a href="https://danuapratama.github.io/e-commerce-v2"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/danuapratama/e-commerce-v2"><i class="fa-brands fa-github ms-2"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100 project-card p-2 rounded-3">
+              <div class="overflow-hidden rounded-top">
+                <img src="assets/img/4.png" class="card-img-top" alt="blog">
+              </div>
+              <div class="card-body project-card-body p-0 pt-2 text-start">
+                <span class="text-secondary project-card-date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  09-10-2022<i class="fa-solid fa-bookmark ms-2"></i>
+                  Web Development
+                </span>
+                <h3 class="card-title mt-3 mb-2 fs-6 fw-bold">Website Travel</h3>
+                <!-- <small class="project-card-description mb-3"><p>Kamu mau membuat website? Sebelum...</small> -->
+                <span class="d-block text-end project-card-icon p-2 fs-5">
+                  <a href="https://danuapratama.github.io/website-travel"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/danuapratama/website-travel"><i class="fa-brands fa-github ms-2"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100 project-card p-2 rounded-3">
+              <div class="overflow-hidden rounded-top">
+                <img src="assets/img/3.png" class="card-img-top" alt="blog">
+              </div>
+              <div class="card-body project-card-body p-0 pt-2 text-start">
+                <span class="text-secondary project-card-date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  09-10-2022<i class="fa-solid fa-bookmark ms-2"></i>
+                  Web Development
+                </span>
+                <h3 class="card-title mt-3 mb-2 fs-6 fw-bold">E-Commerce v.1</h3>
+                <!-- <small class="project-card-description mb-3"><p>Kamu mau membuat website? Sebelum...</small> -->
+                <span class="d-block text-end project-card-icon p-2 fs-5">
+                  <a href="https://danuapratama.github.io/furniture-web"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/danuapratama/furniture-web"><i class="fa-brands fa-github ms-2"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100 project-card p-2 rounded-3">
+              <div class="overflow-hidden rounded-top">
+                <img src="assets/img/2.png" class="card-img-top" alt="blog">
+              </div>
+              <div class="card-body project-card-body p-0 pt-2 text-start">
+                <span class="text-secondary project-card-date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  09-10-2022<i class="fa-solid fa-bookmark ms-2"></i>
+                  Web Development
+                </span>
+                <h3 class="card-title mt-3 mb-2 fs-6 fw-bold">Web Blogger</h3>
+                <!-- <small class="project-card-description mb-3"><p>Kamu mau membuat website? Sebelum...</small> -->
+                <span class="d-block text-end project-card-icon p-2 fs-5">
+                  <a href="https://danuapratama.github.io/simple-blog" target="_blank"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/danuapratama/simple-blog" target="_blank"><i class="fa-brands fa-github ms-2"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100 project-card p-2 rounded-3">
+              <div class="overflow-hidden rounded-top">
+                <img src="assets/img/10.png" class="card-img-top" alt="blog">
+              </div>
+              <div class="card-body project-card-body p-0 pt-2 text-start">
+                <span class="text-secondary project-card-date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  09-10-2022<i class="fa-solid fa-bookmark ms-2"></i>
+                  Web Development
+                </span>
+                <h3 class="card-title mt-3 mb-2 fs-6 fw-bold">React SPA</h3>
+                <!-- <small class="project-card-description mb-3"><p>Kamu mau membuat website? Sebelum...</small> -->
+                <span class="d-block text-end project-card-icon p-2 fs-5">
+                  <a href="https://mini-reactjs.netlify.app" target="_blank"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/danuapratama/mini-react-JS" target="_blank"><i class="fa-brands fa-github ms-2"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <div class="card h-100 project-card p-2 rounded-3">
+              <div class="overflow-hidden rounded-top">
+                <img src="assets/img/5.png" class="card-img-top" alt="blog">
+              </div>
+              <div class="card-body project-card-body p-0 pt-2 text-start">
+                <span class="text-secondary project-card-date">
+                  <i class="fa-regular fa-calendar-days"></i>
+                  09-10-2022<i class="fa-solid fa-bookmark ms-2"></i>
+                  Web Development
+                </span>
+                <h3 class="card-title mt-3 mb-2 fs-6 fw-bold">To-do App</h3>
+                <!-- <small class="project-card-description mb-3"><p>Kamu mau membuat website? Sebelum...</small> -->
+                <span class="d-block text-end project-card-icon p-2 fs-5">
+                  <a href="https://danuapratama.github.io/to-do-list" target="_blank"><i
+                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  <a href="https://github.com/danuapratama/to-do-list" target="_blank"><i class="fa-brands fa-github ms-2"></i></a>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
