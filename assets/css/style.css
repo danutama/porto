@@ -8,8 +8,8 @@
 }
 
 .dark-theme {
-  --body: rgb(82, 82, 82);
-  --body-second: rgb(97, 97, 97);
+  --body: #19212E;
+  --body-second: #2E3440;
   --black-white: #fff;
   --gray-second: rgb(176, 176, 176);
 }
@@ -59,8 +59,8 @@ nav {
 }
 
 .dark i {
-  background: hsla(0, 0%, 53%, 0.5);
-  color: var(--black-white);
+  background: #535e73;
+  color: white;
 }
 /* ==================== END =================== */
 
@@ -101,7 +101,6 @@ nav {
 }
 
 .btn-modal-close {
-  color: var(--gray-second);
   padding: 0;
   left: 20px;
   border: 0;
@@ -121,10 +120,6 @@ nav {
 .home-contact-icon:hover {
   color: var(--black-white);
   text-decoration: underline;
-}
-
-.home-contact-icon small {
-  color: var(--gray-second);
 }
 
 .home-btn,
@@ -178,7 +173,6 @@ nav {
 }
 
 .project-card-date {
-  color: var(--gray-second);
   font-size: 13px;
 }
 
@@ -232,7 +226,7 @@ nav {
   }
 
   .project-card-date {
-    font-size: 10px;
+    font-size: 11px;
   }
 
 }
