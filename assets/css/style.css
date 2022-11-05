@@ -1,15 +1,22 @@
 :root {
+  --body: #fff;
+  --body-second: #fff;
   --black-white: #000;
   --gray-hover: hsla(0, 0%, 0%, 0.06);
+  --gray-second: rgb(112, 112, 112);
   --light-dark: #fff;
 }
 
 .dark-theme {
+  --body: rgb(82, 82, 82);
+  --body-second: rgb(97, 97, 97);
   --black-white: #fff;
+  --gray-second: rgb(176, 176, 176);
 }
 
 html,
 body {
+  background: var(--body);
   font-family: poppins;
   letter-spacing: 0.5px;
 }
@@ -33,7 +40,7 @@ h2 {
 
 /* ==================== NAVBAR =================== */
 nav {
-  background: var(--light-dark);
+  background: var(--body-second);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 1px -2px,
     rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
 }
@@ -50,10 +57,21 @@ nav {
 .navbar-toggler-icons {
   color: var(--black-white);
 }
+
+.dark i {
+  background: hsla(0, 0%, 53%, 0.5);
+  color: var(--black-white);
+}
 /* ==================== END =================== */
 
 /* ==================== HOME =================== */
+.home-name {
+  color: var(--black-white);
+}
+
 .home-search {
+  color: var(--black-white);
+  background: var(--body-second);
   width: 70%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 1px 7px -2px;
@@ -78,7 +96,12 @@ nav {
   color: var(--black-white);
 }
 
+.modal-contact {
+  background: var(--body-second);
+}
+
 .btn-modal-close {
+  color: var(--gray-second);
   padding: 0;
   left: 20px;
   border: 0;
@@ -99,6 +122,15 @@ nav {
   color: var(--black-white);
   text-decoration: underline;
 }
+
+.home-contact-icon small {
+  color: var(--gray-second);
+}
+
+.home-btn,
+.home-btn:hover {
+  color: var(--black-white);
+}
 /* ==================== END =================== */
 
 /* ==================== ABOUT =================== */
@@ -106,7 +138,12 @@ nav {
   width: 100%;
 }
 
+.about-title {
+  color: var(--black-white);
+}
+
 .about-text {
+  color: var(--black-white);
   font-size: 1em;
   line-height: 27px;
 }
@@ -120,7 +157,12 @@ nav {
 
 /* ==================== PROJECT =================== */
 .project-title-small {
+  color: var(--black-white);
   font-size: 20px;
+}
+
+.project-card {
+  background: var(--body-second);
 }
 
 .project-card img {
@@ -136,6 +178,7 @@ nav {
 }
 
 .project-card-date {
+  color: var(--gray-second);
   font-size: 13px;
 }
 
@@ -144,6 +187,10 @@ nav {
 }
 
 .project-card-icon a {
+  color: var(--gray-second);
+}
+
+.project-card-icon a:hover {
   color: var(--black-white);
 }
 /* ==================== END =================== */
@@ -153,6 +200,12 @@ nav {
   .nav-item {
     margin-right: 0 !important;
   }
+
+  .dark {
+    text-align: end;
+    margin-right: 10px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -177,4 +230,9 @@ nav {
   .project-title-small {
     font-size: 16px;
   }
+
+  .project-card-date {
+    font-size: 10px;
+  }
+
 }
