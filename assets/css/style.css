@@ -5,6 +5,7 @@
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
   --gray-dark: #535e73;
+  --gray-light: #ededed;
   --light-dark: #fff;
 }
 
@@ -13,6 +14,7 @@
   --body-second: #2E3440;
   --black-white: #fff;
   --gray-second: rgb(176, 176, 176);
+  --gray-light: #2E3440;
 }
 
 html,
@@ -28,7 +30,7 @@ section {
 
 .container {
   width: 100%;
-  padding-top: 5rem;
+  padding-top: 3rem;
 }
 
 /* H2 as Title of Section */
@@ -191,6 +193,22 @@ nav {
 }
 /* ==================== END =================== */
 
+/* ==================== FOOTER =================== */
+footer {
+  background: var(--gray-light);
+  color: var(--black-white);
+}
+
+.footer a,
+.footer a:hover {
+  color: var(--black-white);
+}
+
+.footer-credit {
+  font-size: 15px;
+}
+/* ==================== END =================== */
+
 /* ==================== MEDIA QUERY =================== */
 @media (max-width: 769px) {
   .nav-item {
@@ -219,7 +237,7 @@ nav {
   }
 
   .about-text {
-    font-size: 0.8em;
+    font-size: 12px;
     line-height: 23px;
   }
 
@@ -231,4 +249,7 @@ nav {
     font-size: 11px;
   }
 
+  .footer-credit {
+    font-size: 12px;
+  }
 }
