@@ -4,6 +4,7 @@
   --black-white: #000;
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
+  --gray-dark: #535e73;
   --light-dark: #fff;
 }
 
@@ -59,8 +60,8 @@ nav {
 }
 
 .dark i {
-  background: #535e73;
-  color: white;
+  background: var(--gray-dark);
+  color: #fff;
 }
 /* ==================== END =================== */
 
@@ -146,8 +147,9 @@ nav {
 
 /* ==================== SKILLS =================== */
 .skills-icon {
-  font-size: 70px;
+  font-size: 30px;
 }
+
 /* ==================== END =================== */
 
 /* ==================== PROJECT =================== */
@@ -181,7 +183,7 @@ nav {
 }
 
 .project-card-icon a {
-  color: var(--gray-second);
+  color: var(--gray-dark);
 }
 
 .project-card-icon a:hover {

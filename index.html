@@ -64,7 +64,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <hr class="mt-2" />
+          <hr class="mt-2 text-secondary" />
           <ul class="navbar-nav text-center">
             <li class="nav-item me-1">
               <a class="nav-link navitem rounded" aria-current="page" href="#home">Home</a>
@@ -80,7 +80,7 @@
             </li>
             <!--<hr>-->
           </ul>
-          <hr />
+          <hr class="text-secondary" />
         </div>
       </div>
     </nav>
@@ -89,13 +89,14 @@
     <section id="home" class="text-center">
       <div class="container">
         <div class="row col-lg d-flex justify-content-center p-3 pt-4">
-          <h1 class="home-title display-3 fw-bold mt-4 mb-5"><span class="home-name">Danu </span><span class="text-primary">P</span><span
-              class="text-danger">r</span><span class="text-warning">a</span><span class="text-primary">t</span><span
-              class="text-success">a</span><span class="text-danger">m</span><span class="text-warning">a</span></h1>
+          <h1 class="home-title display-3 fw-bold mt-4 mb-5"><span class="home-name">Danu </span><span
+              class="text-primary">P</span><span class="text-danger">r</span><span class="text-warning">a</span><span
+              class="text-primary">t</span><span class="text-success">a</span><span class="text-danger">m</span><span
+              class="text-warning">a</span></h1>
 
           <div class="d-flex justify-content-between home-search p-3 px-4 mb-5 rounded-5">
             <span class="home-search-text"><i class="fa-solid fa-search me-3"></i>danupratama.site</span>
-            <span>
+            <span class="text-secondary">
               <i class="fa-solid fa-microphone me-1"></i>
               <i class="fa-solid fa-camera"></i>
             </span>
@@ -103,7 +104,7 @@
 
           <!---------------- MODAL CONTACT ------------->
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-link btn-modal shadow-none mb-5" data-bs-toggle="modal"
+          <button type="button" class="btn btn-link btn-modal col-6 mx-auto shadow-none mb-5" data-bs-toggle="modal"
             data-bs-target="#modalContact">
             Contact & Socials <i class="fa-solid fa-angle-down"></i>
           </button>
@@ -112,25 +113,21 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content modal-contact border-0">
                 <div class="modal-header justify-content-center border-0">
-                  <h5 class="modal-title fw-bold"><span class="text-primary">C</span><span class="text-danger">o</span><span
-                      class="text-warning">n</span><span class="text-primary">t</span><span
-                      class="text-success">a</span><span class="text-danger">c</span><span class="text-warning">t</span>
+                  <h5 class="modal-title fw-bold"><span class="text-primary">C</span><span
+                      class="text-danger">o</span><span class="text-warning">n</span><span
+                      class="text-primary">t</span><span class="text-success">a</span><span
+                      class="text-danger">c</span><span class="text-warning">t</span>
                   </h5>
 
                   <button type="button" class="btn-modal-close position-absolute text-secondary" data-bs-dismiss="modal"
                     aria-label="Close"><i class="fa-solid fa-xmark fs-5"></i></button>
                 </div>
                 <div class="modal-body d-grid">
-                  <li class="mb-3 d-grid text-start list-unstyled">
-                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
-                      href="https://linktr.ee/danupratama" target="_blank"><i
-                        class="fa-solid fa-globe ps-0 p-3"></i>Portfolio<span class="vr mx-2"></span><small
-                        class="text-secondary">https://linktr.ee/danupratama</small></a>
-
+                  <li class="mb-3 ps-1 d-grid text-start list-unstyled">
                     <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
                       href="https://github.com/danuapratama" target="_blank"><i
                         class="fa-brands fa-github ps-0 p-3"></i>GitHub<span class="vr mx-2"></span><small
-                        class="text-secondary">https://github.com/danuapratama</small></a>
+                        class="text-secondary">github.com/danuapratama</small></a>
 
                     <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
                       href="mailto:danupratama.dev@gmail.com" target="_blank"><i
@@ -141,9 +138,22 @@
                       href="https://instagram.com/danuapratama" target="_blank"><i
                         class="fa-brands fa-instagram ps-0 p-3"></i>Instagram<span class="vr mx-2"></span><small
                         class="text-secondary">danuapratama</small></a>
+
+                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
+                      href="https://t.me/danu_pratama" target="_blank"><i
+                        class="fa-brands fa-telegram ps-0 p-3"></i>Telegram<span class="vr mx-2"></span><small
+                        class="text-secondary">danu_pratama</small></a>
+
+                    <a class="home-contact-icon pt-2 pb-2 border-bottom border-secondary"
+                      href="https://saweria.co/danuapratama/" target="_blank"><i
+                        class="fa-solid fa-mug-hot ps-0 p-3"></i>Saweria<span class="vr mx-2"></span><small
+                        class="text-secondary">saweria.co/danuapratama</small></a>
                   </li>
                 </div>
                 <div class="modal-footer border-0">
+                  <p class="d-flex text-center justify-content-center">
+                    <small class="text-secondary">Let's connected</small>
+                  </p>
                 </div>
               </div>
             </div>
@@ -153,7 +163,7 @@
           <!-- <span class="home-subtitle col-lg-6 mb-4 fs-6 px-3"></span> -->
           <div class="mx-auto">
             <a href="#project"
-              class="home-btn btn fs-6 pt-3 pb-3 px-5 fw-bold border-0 bg-secondary bg-opacity-10 rounded-3">View Project</a>
+              class="home-btn btn fs-6 pt-3 pb-3 px-5 border-0 bg-secondary bg-opacity-10 rounded-3">View Project</a>
           </div>
         </div>
       </div>
@@ -193,24 +203,36 @@
     <section id="skills" class="text-center">
       <div class="container">
         <h2 class="skills-title">Skills & Tools</h2>
-        <div class="row skills-icon">
+        <div class="row justify-content-start skills-icon">
           <span class="col-md-2 col-sm-4 col-6">
-            <i class='fa-brands fa-html5 text-secondary' title="HTML"></i>
+            <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
+              <i class='fa-brands fa-html5 text-primary' title="HTML"></i>
+            </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
-            <i class='fa-brands fa-css3-alt text-secondary' title="CSS"></i>
+            <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
+              <i class='fa-brands fa-css3-alt text-danger' title="CSS"></i>
+            </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
-            <i class='fa-brands fa-square-js text-secondary' title="JavaScript"></i>
+            <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
+              <i class='fa-brands fa-square-js text-warning' title="JavaScript"></i>
+            </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
-            <i class='fa-brands fa-bootstrap text-secondary' title="Bootstrap"></i>
+            <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
+              <i class='fa-brands fa-bootstrap text-primary' title="Bootstrap"></i>
+            </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
-            <i class='fa-brands fa-php text-secondary' title="PHP"></i>
+            <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
+              <i class='fa-brands fa-php text-success' title="PHP"></i>
+            </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
-            <i class='fa-brands fa-github text-secondary' title="GitHub"></i>
+            <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
+              <i class='fa-brands fa-github text-info' title="GitHub"></i>
+            </span>
           </span>
         </div>
       </div>
@@ -305,7 +327,8 @@
                 <span class="d-block text-end project-card-icon p-2 fs-5">
                   <a href="https://danuapratama.github.io/simple-blog" target="_blank"><i
                       class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  <a href="https://github.com/danuapratama/simple-blog" target="_blank"><i class="fa-brands fa-github ms-2"></i></a>
+                  <a href="https://github.com/danuapratama/simple-blog" target="_blank"><i
+                      class="fa-brands fa-github ms-2"></i></a>
                 </span>
               </div>
             </div>
@@ -327,7 +350,8 @@
                 <span class="d-block text-end project-card-icon p-2 fs-5">
                   <a href="https://mini-reactjs.netlify.app" target="_blank"><i
                       class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  <a href="https://github.com/danuapratama/mini-react-JS" target="_blank"><i class="fa-brands fa-github ms-2"></i></a>
+                  <a href="https://github.com/danuapratama/mini-react-JS" target="_blank"><i
+                      class="fa-brands fa-github ms-2"></i></a>
                 </span>
               </div>
             </div>
@@ -349,7 +373,8 @@
                 <span class="d-block text-end project-card-icon p-2 fs-5">
                   <a href="https://danuapratama.github.io/to-do-list" target="_blank"><i
                       class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                  <a href="https://github.com/danuapratama/to-do-list" target="_blank"><i class="fa-brands fa-github ms-2"></i></a>
+                  <a href="https://github.com/danuapratama/to-do-list" target="_blank"><i
+                      class="fa-brands fa-github ms-2"></i></a>
                 </span>
               </div>
             </div>
