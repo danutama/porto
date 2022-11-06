@@ -1,3 +1,13 @@
+/*========== SCROLL ACTIVE NAVBAR ==========*/
+const header = document.getElementById('nav');
+const activeHeader = function () {
+  window.scrollY > 50 ? header.classList.add("active")
+  : header.classList.remove("active");
+}
+
+window.addEventListener("scroll", activeHeader);
+/*========== END ==========*/
+
 /*========== DARK LIGHT THEME ==========*/
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';

@@ -22,6 +22,7 @@ body {
   background: var(--body);
   font-family: poppins;
   letter-spacing: 0.5px;
+  scroll-behavior: smooth;
 }
 
 section {
@@ -44,6 +45,9 @@ h2 {
 /* ==================== NAVBAR =================== */
 nav {
   background: var(--body-second);
+}
+
+nav.active {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 1px -2px,
     rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
 }
@@ -64,6 +68,7 @@ nav {
 .dark i {
   background: var(--gray-dark);
   color: #fff;
+  cursor: pointer;
 }
 /* ==================== END =================== */
 
@@ -142,7 +147,7 @@ nav {
 
 .about-text {
   color: var(--black-white);
-  font-size: 1em;
+  font-size: 17px;
   line-height: 27px;
 }
 /* ==================== END =================== */
@@ -199,9 +204,14 @@ footer {
   color: var(--black-white);
 }
 
-.footer a,
-.footer a:hover {
+.footer a {
   color: var(--black-white);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 .footer-credit {
@@ -237,7 +247,7 @@ footer {
   }
 
   .about-text {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 23px;
   }
 
@@ -247,6 +257,10 @@ footer {
 
   .project-card-date {
     font-size: 11px;
+  }
+
+  .footer a {
+    font-size: 13px;
   }
 
   .footer-credit {
