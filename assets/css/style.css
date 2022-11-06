@@ -156,7 +156,6 @@ nav.active {
 .skills-icon {
   font-size: 30px;
 }
-
 /* ==================== END =================== */
 
 /* ==================== PROJECT =================== */
@@ -165,8 +164,23 @@ nav.active {
   font-size: 20px;
 }
 
+.project-wrap {
+  display: none;
+}
+
 .project-card {
   background: var(--body-second);
+}
+
+.project-btn-load,
+.project-btn-load:hover {
+  color: var(--black-white);
+}
+
+.project-wrap:nth-child(1),
+.project-wrap:nth-child(2),
+.project-wrap:nth-child(3) {
+  display: inline-block;
 }
 
 .project-card img {
@@ -193,6 +207,7 @@ nav.active {
   color: var(--gray-dark);
 }
 
+.project-card:hover a,
 .project-card-icon a:hover {
   color: var(--black-white);
 }
@@ -229,7 +244,6 @@ footer {
     text-align: end;
     margin-right: 10px;
   }
-
 }
 
 @media (max-width: 500px) {
@@ -247,7 +261,7 @@ footer {
   }
 
   .about-text {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 23px;
   }
 
