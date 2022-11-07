@@ -93,7 +93,6 @@ nav.active {
 }
 
 .home-time {
-  width: 65%;
   color: var(--black-white);
   font-size: 14px;
 }
@@ -161,7 +160,7 @@ nav.active {
 .about-text {
   color: var(--black-white);
   font-size: 17px;
-  line-height: 27px;
+  line-height: 29px;
 }
 /* ==================== END =================== */
 
@@ -274,9 +273,13 @@ footer {
     max-width: 80%;
   }
 
+  #home .btn-modal {
+    font-size: 13px;
+  }
+
   .about-text {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 27px;
   }
 
   .project-title-small {
