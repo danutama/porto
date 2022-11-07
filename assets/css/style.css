@@ -1,20 +1,27 @@
 :root {
-  --body: #fff;
-  --body-second: #fff;
+  --body: #ffffff;
+  --body-second: #ffffff;
   --black-white: #000;
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
   --gray-dark: #535e73;
   --gray-light: #ededed;
-  --light-dark: #fff;
+  --light-dark: #ffffff;
 }
 
 .dark-theme {
   --body: #19212E;
   --body-second: #2E3440;
-  --black-white: #fff;
+  --black-white: #ffffff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #2E3440;
+}
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -83,6 +90,12 @@ nav.active {
   width: 70%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 1px 7px -2px;
+}
+
+.home-time {
+  width: 65%;
+  color: var(--black-white);
+  font-size: 14px;
 }
 
 .home-search-text {
@@ -252,7 +265,8 @@ footer {
     font-size: 25px;
   }
 
-  .home-search {
+  .home-search,
+  .home-time {
     width: 100%;
   }
 
@@ -262,7 +276,7 @@ footer {
 
   .about-text {
     font-size: 14px;
-    line-height: 23px;
+    line-height: 25px;
   }
 
   .project-title-small {
@@ -277,6 +291,7 @@ footer {
     font-size: 13px;
   }
 
+  .home-time,
   .footer-credit {
     font-size: 12px;
   }

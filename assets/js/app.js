@@ -37,3 +37,10 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+// Show todays date
+const dateElement = document.getElementById('date');
+const options = { month: 'short', day: 'numeric' };
+const today = new Date();
+
+dateElement.innerHTML = today.toLocaleDateString('en-US', options);
