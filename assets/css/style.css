@@ -5,7 +5,7 @@
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
   --gray-dark: #535e73;
-  --gray-light: #ededed;
+  --gray-light: #f2f4f9;
   --light-dark: #ffffff;
 }
 
@@ -182,6 +182,8 @@ nav.active {
 
 .project-card {
   background: var(--body-second);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border: none;
 }
 
 .project-btn-load,
@@ -222,6 +224,35 @@ nav.active {
 .project-card:hover a,
 .project-card-icon a:hover {
   color: var(--black-white);
+}
+/* ==================== END =================== */
+
+/* ==================== FAQ ACCORDION =================== */
+.accordion-item,
+.accordion-button,
+.accordion-button:active,
+.accordion-button:focus {
+  background: var(--body-second) !important;
+  color: var(--black-white);
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 1px -2px,
+    rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
+}
+
+.accordion-collapse {
+  background: var(--body);
+}
+
+.accordion-button:hover {
+  color: #0d6efd;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23535e73'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 /* ==================== END =================== */
 
@@ -288,6 +319,14 @@ footer {
 
   .project-card-date {
     font-size: 11px;
+  }
+
+  .accordion-button {
+    font-size: 14px;
+  }
+
+  .accordion-body {
+    font-size: 13px;
   }
 
   .footer a {
