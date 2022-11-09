@@ -105,15 +105,13 @@ nav.active {
   display: inline-block;
 }
 
-.btn-modal {
-  color: var(--black-white);
-  text-decoration: none;
-}
-
+.btn-modal,
 .btn-modal:hover,
 .btn-modal:active,
 .btn-modal:focus {
-  color: var(--black-white);
+  text-decoration: none;
+  background: var(--gray-dark);
+  color: #ffffff;
 }
 
 .modal-contact {
@@ -166,7 +164,7 @@ nav.active {
 
 /* ==================== SKILLS =================== */
 .skills-icon {
-  font-size: 30px;
+  font-size: 40px;
 }
 /* ==================== END =================== */
 
