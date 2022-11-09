@@ -227,32 +227,22 @@ nav.active {
 }
 /* ==================== END =================== */
 
-/* ==================== FAQ ACCORDION =================== */
-.accordion-item,
-.accordion-button,
-.accordion-button:active,
-.accordion-button:focus {
-  background: var(--body-second) !important;
-  color: var(--black-white);
+/* ==================== ACTION =================== */
+.action-title {
+  line-height: 45px;
 }
 
-.accordion-item {
-  margin-bottom: 1rem;
-  border: none;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 1px -2px,
-    rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
+.act-btn,
+.act-btn:hover,
+.act-btn:active,
+.act-btn:focus {
+  background: var(--gray-dark);
+  color: #ffffff;
 }
 
-.accordion-collapse {
-  background: var(--body);
-}
-
-.accordion-button:hover {
-  color: #0d6efd;
-}
-
-.accordion-button::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23535e73'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+.action-img {
+  width: 100%;
+  max-width: 300px;
 }
 /* ==================== END =================== */
 
@@ -321,12 +311,12 @@ footer {
     font-size: 11px;
   }
 
-  .accordion-button {
-    font-size: 14px;
+  .action-img {
+    max-width: 200px;
   }
 
-  .accordion-body {
-    font-size: 13px;
+  #action .act-btn {
+    font-size: 14px;
   }
 
   .footer a {
