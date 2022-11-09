@@ -266,7 +266,7 @@ footer {
 /* ==================== END =================== */
 
 /* ==================== MEDIA QUERY =================== */
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .nav-item {
     margin-right: 0 !important;
   }
