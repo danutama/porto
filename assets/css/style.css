@@ -5,7 +5,7 @@
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
   --gray-dark: #535e73;
-  --gray-light: #f2f4f9;
+  --gray-light: #eeeff1;
   --light-dark: #ffffff;
 }
 
@@ -149,10 +149,7 @@ nav.active {
 /* ==================== ABOUT =================== */
 .about-image {
   width: 100%;
-}
-
-.about-title {
-  color: var(--black-white);
+  max-width: 500px;
 }
 
 .about-text {
