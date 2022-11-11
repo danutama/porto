@@ -204,8 +204,9 @@ nav.active {
   transform: scale(1.2);
 }
 
-.project-card-date {
-  font-size: 13px;
+.project-card-badge {
+  color: var(--black-white);
+  font-weight: normal;
 }
 
 .project-card-body h3 {
@@ -300,10 +301,6 @@ footer {
 
   .project-title-small {
     font-size: 16px;
-  }
-
-  .project-card-date {
-    font-size: 11px;
   }
 
   .action-img {
