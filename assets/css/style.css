@@ -234,6 +234,7 @@ nav.active {
 .act-btn:focus {
   background: var(--gray-dark);
   color: #ffffff;
+  padding: 10px 25px;
 }
 
 .action-img {
