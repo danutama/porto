@@ -4,7 +4,8 @@
   --black-white: #000;
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
-  --gray-dark: #535e73;
+  /* --gray-dark: #535e73; */
+  --gray-dark: #6366f1;
   --gray-light: #eeeff1;
   --light-dark: #ffffff;
 }
