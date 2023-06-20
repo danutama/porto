@@ -44,3 +44,8 @@ const options = { month: 'short', day: 'numeric' };
 const today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString('en-US', options);
+
+
+// Tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

@@ -72,6 +72,11 @@ nav.active {
   color: var(--black-white);
 }
 
+.navbar-brand,
+.navbar-brand:hover {
+  color: var(--gray-dark);
+}
+
 .dark i {
   background: var(--gray-dark);
   color: #fff;
@@ -80,6 +85,20 @@ nav.active {
 /* ==================== END =================== */
 
 /* ==================== HOME =================== */
+.pattern1,
+.pattern2 {
+  width: 20%;
+}
+
+.pattern1 {
+  left: 0;
+}
+
+.pattern2 {
+  right: 0;
+  bottom: 0;
+}
+
 .home-name,
 .home-subtitle {
   color: var(--black-white);
@@ -130,6 +149,10 @@ nav.active {
   background: var(--body);
 }
 
+.modal-title {
+  color: var(--gray-dark);
+}
+
 .btn-modal-close {
   padding: 0;
   left: 20px;
@@ -174,6 +197,10 @@ nav.active {
 /* ==================== SKILLS =================== */
 .skills-icon {
   font-size: 40px;
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--gray-dark);
 }
 /* ==================== END =================== */
 
@@ -246,12 +273,12 @@ nav.active {
 .act-btn:focus {
   background: var(--gray-dark);
   color: #ffffff;
-  padding: 10px 25px;
+  padding: 10px 30px;
 }
 
 .action-img {
   width: 100%;
-  max-width: 300px;
+  max-width: 500px;
 }
 /* ==================== END =================== */
 
@@ -294,6 +321,14 @@ footer {
     font-size: 25px;
   }
 
+  .pattern1 {
+    width: 40%;
+  }
+
+  .pattern2 {
+    width: 30%;
+  }
+
   .home-search,
   .home-time {
     width: 100%;
@@ -317,7 +352,7 @@ footer {
   }
 
   .action-img {
-    max-width: 200px;
+    max-width: 400px;
   }
 
   #action .act-btn {

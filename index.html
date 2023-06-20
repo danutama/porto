@@ -45,7 +45,8 @@
   <header>
     <nav id="nav" class="navbar nav-container fixed-top navbar-expand-md">
       <div class="container pt-0">
-        <a class="navbar-brand fs-3 rounded fw-bold navbrand" href=""><span class="text-primary">Dan</span>
+        <a class="navbar-brand fs-3 rounded fw-bold navbrand" href="">
+          Dan
         </a>
 
         <!-- DARK-LIGHT MODE -->
@@ -84,6 +85,34 @@
   </header>
   <main>
     <section id="home" class="text-center">
+
+      <!-- PATTERN -->
+      <div class="pattern1 position-absolute">
+        <svg class="w-full h-full" viewBox="0 0 1200 1200">
+          <defs>
+            <pattern id="bg_pattern" width="100" height="100" patternUnits="userSpaceOnUse">
+              <circle cx="50.5" cy="50.5" r="10" fill="#EAECF4" stroke="none"></circle>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="100%" height="100%" fill="none"></rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#bg_pattern)"></rect>
+        </svg>
+      </div>
+
+      <div class="pattern2 position-absolute">
+        <svg class="w-full h-full" viewBox="0 0 1300 1300">
+          <defs>
+            <pattern id="bg_pattern_left" width="100" height="100" patternUnits="userSpaceOnUse">
+              <line x1="50" y1="35" x2="50" y2="65" stroke="#EAECF4" stroke-width="6" stroke-linecap="round"></line>
+              <line x1="35" y1="50" x2="65" y2="50" stroke="#EAECF4" stroke-width="6" stroke-linecap="round"></line>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="100%" height="100%" fill="none"></rect>
+          <rect x="0" y="0" width="100%" height="100%" fill="url(#bg_pattern_left)"></rect>
+        </svg>
+      </div>
+      <!-- PATTERN END -->
+
       <div class="container">
         <div class="row col-lg d-flex justify-content-center p-3 pt-4">
           <h1 class="home-title display-1 mt-4 mb-4"><span class="home-name">Danu Pratama</span></h1>
@@ -122,7 +151,7 @@
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
               <div class="modal-content modal-contact border-0">
                 <div class="modal-header justify-content-center border-0">
-                  <h5 class="modal-title fw-bold"><span class="text-primary">Contact</span></h5>
+                  <h5 class="modal-title fw-bold">Contact</h5>
 
                   <button type="button" class="btn-modal-close position-absolute text-secondary" data-bs-dismiss="modal"
                     aria-label="Close"><i class="fa-solid fa-xmark fs-5"></i></button>
@@ -202,52 +231,52 @@
         <div class="row justify-content-center skills-icon">
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <i class='fa-brands fa-html5 text-danger' title="HTML"></i>
+              <i class='fa-brands fa-html5 text-danger' title="HTML" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="HTML"></i>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <i class='fa-brands fa-css3-alt text-primary' title="CSS"></i>
+              <i class='fa-brands fa-css3-alt text-primary' title="CSS" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CSS"></i>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <i class='fa-brands fa-bootstrap text-primary' title="Bootstrap"></i>
+              <i class='fa-brands fa-bootstrap text-primary' title="Bootstrap" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Bootstrap"></i>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <i class='fa-brands fa-square-js text-warning' title="JavaScript"></i>
+              <i class='fa-brands fa-square-js text-warning' title="JavaScript" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="JavaScript"></i>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <i class='fa-brands fa-php text-success' title="PHP"></i>
+              <i class='fa-brands fa-php text-success' title="PHP" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PHP Language"></i>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <iconify-icon class="d-flex justify-content-center text-primary" icon="simple-icons:mysql"></iconify-icon>
+              <iconify-icon class="d-flex justify-content-center text-primary" icon="simple-icons:mysql" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="MySQL Database"></iconify-icon>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <i class='fa-brands fa-github text-info' title="GitHub"></i>
+              <i class='fa-brands fa-github text-info' title="GitHub" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GitHub"></i>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <iconify-icon class="d-flex justify-content-center text-danger" icon="bi:git"></iconify-icon>
+              <iconify-icon class="d-flex justify-content-center text-danger" icon="bi:git" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Git"></iconify-icon>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <iconify-icon class="d-flex justify-content-center" icon="logos:visual-studio-code"></iconify-icon>
+              <iconify-icon class="d-flex justify-content-center" icon="logos:visual-studio-code" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Visual Studio Code"></iconify-icon>
             </span>
           </span>
           <span class="col-md-2 col-sm-4 col-6">
             <span class="card border-0 rounded bg-secondary bg-opacity-10 mb-2 p-3">
-              <iconify-icon class="d-flex justify-content-center" icon="logos:laravel"></iconify-icon>
+              <iconify-icon class="d-flex justify-content-center" icon="logos:laravel" data-bs-custom-class="custom-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Laravel Framework"></iconify-icon>
             </span>
           </span>
         </div>
@@ -504,13 +533,13 @@
     <section id="action" class="mb-5">
       <div class="container">
         <div class="text-center mb-3">
-          <img src="assets/img/connect.png" class="action-img" alt="">
+          <img src="assets/img/team.svg" class="action-img" alt="team work">
         </div>
-        <h2 class="action-title text-sm-center text-start p-sm-3">I'd love to hear your take if interested and figure out how to move forward together</h2>
+        <h2 class="action-title text-sm-center text-start p-sm-3">I'd love to hear your perspective if you're interested and find a way to move forward together</h2>
         <div class="mx-auto text-sm-center text-start">
           <button type="button" class="btn btn-link btn-modal act-btn mb-5 rounded-3" data-bs-toggle="modal"
             data-bs-target="#modalContact">
-            Get In Touch
+            Get in Touch
           </button>
         </div>
       </div>
