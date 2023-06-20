@@ -4,18 +4,17 @@
   --black-white: #000;
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
-  /* --gray-dark: #535e73; */
   --gray-dark: #6366f1;
   --gray-light: #eeeff1;
   --light-dark: #ffffff;
 }
 
 .dark-theme {
-  --body: #19212E;
-  --body-second: #2E3440;
+  --body: #131022;
+  --body-second: #211c3b;
   --black-white: #ffffff;
   --gray-second: rgb(176, 176, 176);
-  --gray-light: #2E3440;
+  --gray-light: #211c3b;
 }
 
 /* Global Styling */
@@ -81,8 +80,13 @@ nav.active {
 /* ==================== END =================== */
 
 /* ==================== HOME =================== */
-.home-name {
+.home-name,
+.home-subtitle {
   color: var(--black-white);
+}
+
+.home-subtitle{
+  letter-spacing: 4px;
 }
 
 .home-search {
@@ -106,17 +110,24 @@ nav.active {
   display: inline-block;
 }
 
-.btn-modal,
+.btn-modal {
+  text-decoration: none;
+  background: var(--gray-dark);
+  color: #fff;
+  transition: all .2s;
+  box-shadow: 0px 5px 13px rgba(0, 0, 255, 0.3) !important;
+}
+
 .btn-modal:hover,
 .btn-modal:active,
 .btn-modal:focus {
-  text-decoration: none;
   background: var(--gray-dark);
-  color: #ffffff;
+  color: #fff;
+  box-shadow: none !important;
 }
 
 .modal-contact {
-  background: var(--body-second);
+  background: var(--body);
 }
 
 .btn-modal-close {
@@ -215,7 +226,7 @@ nav.active {
 }
 
 .project-card-icon a {
-  color: var(--gray-dark);
+  color: var(--black-white);
 }
 
 .project-card:hover a,
