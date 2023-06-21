@@ -1,12 +1,35 @@
 /*========== SCROLL ACTIVE NAVBAR ==========*/
-const header = document.getElementById('nav');
-const activeHeader = function () {
-  window.scrollY > 50 ? header.classList.add("active")
-  : header.classList.remove("active");
+// const header = document.getElementById('nav');
+// const activeHeader = function () {
+//   window.scrollY > 50 ? header.classList.add("active")
+//   : header.classList.remove("active");
+// }
+
+// window.addEventListener("scroll", activeHeader);
+/*========== END ==========*/
+
+/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+function scrollActive() {
+  var sections = document.querySelectorAll('section');
+
+  sections.forEach(function(section) {
+    if (section.getBoundingClientRect().top <= 50) {
+      var id = section.getAttribute('id');
+      var navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(function(link) {
+        link.classList.remove('active');
+
+        if (link.getAttribute('href').slice(1) === id) {
+          link.classList.add('active');
+        }
+      });
+    }
+  });
 }
 
-window.addEventListener("scroll", activeHeader);
-/*========== END ==========*/
+window.addEventListener('scroll', scrollActive);
+// ============== END ============== //
 
 /*========== DARK LIGHT THEME ==========*/
 const themeButton = document.getElementById('theme-button');

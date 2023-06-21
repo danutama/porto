@@ -2,7 +2,7 @@
   --body: #ffffff;
   --body-second: #ffffff;
   --black-white: #000;
-  --gray-hover: hsla(0, 0%, 0%, 0.06);
+  --gray-hover: hsla(52, 100%, 50%, 0.2);
   --gray-second: rgb(112, 112, 112);
   --gray-dark: #6366f1;
   --hover: #6366f1;
@@ -56,9 +56,10 @@ nav {
   background: var(--body-second);
 }
 
-nav.active {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 1px -2px,
-    rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
+.nav-item a.active {
+  color: var(--black-white) !important;
+  font-weight:normal !important;
+  background: var(--gray-hover);
 }
 
 .navitem {
@@ -129,6 +130,7 @@ nav.active {
 }
 
 .btn-modal {
+  padding: 12px 30px;
   text-decoration: none;
   background: var(--gray-dark);
   color: #fff;
@@ -203,10 +205,15 @@ nav.active {
   color: var(--black-white);
 }
 
+p.experience-list {
+  font-size: 13px;
+}
+
 .experience-dot {
-  font-size: 10px;
+  font-size: 8px;
   color: var(--hover);
 }
+
 .experience-text {
   color: var(--black-white);
   font-size: 15px;
@@ -292,7 +299,6 @@ nav.active {
 .act-btn:focus {
   background: var(--gray-dark);
   color: #ffffff;
-  padding: 10px 30px;
 }
 
 .action-img {
@@ -325,7 +331,14 @@ footer {
 /* ==================== MEDIA QUERY =================== */
 @media (max-width: 767px) {
   .nav-item {
-    margin-right: 0 !important;
+    /* margin-right: 0 !important; */
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .nav-item a.active,
+  .navitem:hover {
+    background: none;
   }
 
   .dark {
@@ -345,7 +358,7 @@ footer {
   }
 
   .pattern2 {
-    width: 30%;
+    width: 35%;
   }
 
   .home-search,
