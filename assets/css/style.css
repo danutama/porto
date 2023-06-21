@@ -104,10 +104,7 @@ nav.active {
 .home-name,
 .home-subtitle {
   color: var(--black-white);
-}
-
-.home-subtitle{
-  letter-spacing: 4px;
+  letter-spacing: 2px;
 }
 
 .home-search {
@@ -192,6 +189,27 @@ nav.active {
 .about-text {
   color: var(--black-white);
   font-size: 17px;
+  line-height: 29px;
+}
+/* ==================== END =================== */
+
+/* ==================== EXPERIENCE =================== */
+.experience-image {
+  width: 100%;
+  max-width: 80px;
+}
+
+.experience-list {
+  color: var(--black-white);
+}
+
+.experience-dot {
+  font-size: 10px;
+  color: var(--hover);
+}
+.experience-text {
+  color: var(--black-white);
+  font-size: 15px;
   line-height: 29px;
 }
 /* ==================== END =================== */
@@ -337,6 +355,10 @@ footer {
 
   .home-search-text {
     max-width: 80%;
+  }
+
+  .home-subtitle{
+    font-size: 13px;
   }
 
   #home .btn-modal {
