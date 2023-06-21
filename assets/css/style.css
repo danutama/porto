@@ -5,6 +5,7 @@
   --gray-hover: hsla(0, 0%, 0%, 0.06);
   --gray-second: rgb(112, 112, 112);
   --gray-dark: #6366f1;
+  --hover: #6366f1;
   --gray-light: #eeeff1;
   --light-dark: #ffffff;
 }
@@ -15,6 +16,7 @@
   --black-white: #ffffff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #211c3b;
+  --hover: #ffea2d;
 }
 
 /* Global Styling */
@@ -140,8 +142,8 @@ nav.active {
 .btn-modal:hover,
 .btn-modal:active,
 .btn-modal:focus {
-  background: var(--gray-dark);
-  color: #fff;
+  background: var(--gray-dark) !important;
+  color: #fff !important;
   box-shadow: none !important;
 }
 
@@ -256,9 +258,8 @@ nav.active {
   color: var(--black-white);
 }
 
-.project-card:hover a,
-.project-card-icon a:hover {
-  color: var(--black-white);
+.project-card a:hover {
+  color: var(--hover);
 }
 /* ==================== END =================== */
 
