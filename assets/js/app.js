@@ -1,23 +1,22 @@
 /*========== SCROLL ACTIVE NAVBAR ==========*/
 const header = document.getElementById('nav');
 const activeHeader = function () {
-  window.scrollY > 50 ? header.classList.add("active")
-  : header.classList.remove("active");
-}
+  window.scrollY > 50 ? header.classList.add('active') : header.classList.remove('active');
+};
 
-window.addEventListener("scroll", activeHeader);
+window.addEventListener('scroll', activeHeader);
 /*========== END ==========*/
 
 /*===== SCROLL SECTIONS ACTIVE LINK =====*/
 function scrollActive() {
   var sections = document.querySelectorAll('section');
 
-  sections.forEach(function(section) {
+  sections.forEach(function (section) {
     if (section.getBoundingClientRect().top <= 50) {
       var id = section.getAttribute('id');
       var navLinks = document.querySelectorAll('.nav-link');
 
-      navLinks.forEach(function(link) {
+      navLinks.forEach(function (link) {
         link.classList.remove('active');
 
         if (link.getAttribute('href').slice(1) === id) {
@@ -68,7 +67,26 @@ const today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString('en-US', options);
 
+// ========== Tooltip
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 
-// Tooltip
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+// ========== GitHub Repo
+fetch('https://api.github.com/users/danuapratama/repos')
+  .then((response) => response.json())
+  .then((data) => {
+    const repoCount = data.length;
+    const username = data[0].owner.login;
+
+    let starsCount = 0;
+    data.forEach((repo) => {
+      starsCount += repo.stargazers_count;
+    });
+
+    document.getElementById('repoCount').textContent = repoCount;
+    document.getElementById('username').textContent = username;
+    document.getElementById('star').textContent = `${starsCount}`;
+  })
+  .catch((error) => {
+    console.error(error);
+  });

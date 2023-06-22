@@ -16,7 +16,7 @@
   --black-white: #ffffff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #211c3b;
-  --hover: #ffea2d;
+  --hover: #fff12d;
 }
 
 /* Global Styling */
@@ -87,9 +87,9 @@ nav {
 
 .dark i {
   font-size: 20px;
-  padding: 6px;
-  background: var(--gray-dark);
-  color: #fff;
+  padding: 5px;
+  /* background: var(--hover); */
+  color: var(--hover);
   cursor: pointer;
 }
 /* ==================== END =================== */
@@ -193,6 +193,11 @@ nav {
 .about-image {
   width: 100%;
   max-width: 500px;
+}
+
+.github-profile {
+  font-size: 13px;
+  color: var(--black-white);
 }
 
 .about-text {
