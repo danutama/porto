@@ -158,7 +158,11 @@ nav {
 }
 
 .modal-title {
-  color: var(--gray-dark);
+  /* color: var(--gray-dark); */
+  background-image: linear-gradient(to right, #6366f1, #02cccc);
+  background-clip: text;
+  -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
+  color: transparent;
 }
 
 .btn-modal-close {
