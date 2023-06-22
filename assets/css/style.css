@@ -109,6 +109,20 @@ nav {
   bottom: 0;
 }
 
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+.svg-arrow {
+  animation: moveUpDown 2s infinite alternate;
+  transform-origin: top right;
+}
+
 .home-name,
 .home-subtitle {
   color: var(--black-white);
@@ -159,7 +173,7 @@ nav {
 
 .modal-title {
   /* color: var(--gray-dark); */
-  background-image: linear-gradient(to right, #6366f1, #00bdbd);
+  background-image: linear-gradient(to right, #6366f1, #0094bd);
   background-clip: text;
   -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
   color: transparent;
@@ -355,6 +369,10 @@ footer {
   .nav-item a.active,
   .navitem:hover {
     background: none;
+  }
+
+  .navitem {
+    font-size: 13px;
   }
 
   .dark {
