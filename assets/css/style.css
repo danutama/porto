@@ -349,7 +349,7 @@ footer {
   .nav-item {
     /* margin-right: 0 !important; */
     display: flex !important;
-    justify-content: center;
+    justify-content: end;
   }
 
   .nav-item a.active,
