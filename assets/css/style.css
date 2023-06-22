@@ -88,6 +88,7 @@ nav {
 .dark i {
   font-size: 20px;
   padding: 5px;
+  margin-top: 2px;
   /* background: var(--hover); */
   color: var(--hover);
   cursor: pointer;
@@ -339,7 +340,7 @@ p.experience-list {
 
 /* ==================== FOOTER =================== */
 footer {
-  background: var(--gray-light);
+  /* background: var(--gray-light); */
   color: var(--black-white);
 }
 
@@ -373,6 +374,10 @@ footer {
 
   .navitem {
     font-size: 13px;
+  }
+
+  .navbar-toggler-icons.fa-bars {
+    padding-left: 2px;
   }
 
   .dark {
