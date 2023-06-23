@@ -88,7 +88,7 @@ nav {
 .dark i {
   font-size: 20px;
   padding: 5px;
-  margin-top: 2px;
+  margin-top: 1.5px;
   /* background: var(--hover); */
   color: var(--hover);
   cursor: pointer;
@@ -240,15 +240,37 @@ p.experience-list {
   font-size: 13px;
 }
 
-.experience-dot {
-  font-size: 8px;
-  color: var(--hover);
-}
-
 .experience-text {
   color: var(--black-white);
   font-size: 15px;
+  font-weight: 100;
   line-height: 29px;
+}
+
+.accordion-button {
+  font-size: 13px;
+}
+
+.accordion-button::after {
+  display: none !important;
+}
+
+.accordion-button .fas.fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+.accordion-button[aria-expanded="true"] .fas.fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.circle-shape {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(66, 226, 184, 0.2);
+  position: absolute;
+  right:-10%;
+  top:-10%;
 }
 /* ==================== END =================== */
 
