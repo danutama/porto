@@ -61,6 +61,10 @@ nav {
     rgba(0, 0, 0, 0.3) 0px 1px 7px -5px;
 } */
 
+.navbar-collapse {
+  transition: height 0.3s ease;
+}
+
 .nav-item a.active {
   color: var(--black-white) !important;
   font-weight:normal !important;
@@ -321,8 +325,8 @@ p.experience-list {
 .experience-text {
   color: var(--black-white);
   font-size: 15px;
-  font-weight: 100;
-  line-height: 29px;
+  font-weight: 300;
+  line-height: 25px;
 }
 
 .accordion-button {
@@ -345,7 +349,7 @@ p.experience-list {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: rgb(66, 226, 184, 0.2);
+  background-color: rgba(74, 247, 250, 0.2);
   position: absolute;
   right:-10%;
   top:-10%;
