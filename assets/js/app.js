@@ -31,15 +31,15 @@ window.addEventListener('scroll', scrollActive);
 // ============== END ============== //
 
 /*========== NAVBAR TOGGLE BTN ==========*/
-document.addEventListener('DOMContentLoaded', function() {
-  var navbarToggler = document.querySelector('.navbar-toggler');
-  var navbarIcon = navbarToggler.querySelector('.navbar-toggler-icons');
+// document.addEventListener('DOMContentLoaded', function() {
+//   var navbarToggler = document.querySelector('.navbar-toggler');
+//   var navbarIcon = navbarToggler.querySelector('.navbar-toggler-icons');
 
-  navbarToggler.addEventListener('click', function() {
-    navbarIcon.classList.toggle('fa-bars-staggered');
-    navbarIcon.classList.toggle('fa-bars');
-  });
-});
+//   navbarToggler.addEventListener('click', function() {
+//     navbarIcon.classList.toggle('fa-bars-staggered');
+//     navbarIcon.classList.toggle('fa-bars');
+//   });
+// });
 /*========== END ==========*/
 
 /*========== DARK LIGHT THEME ==========*/
