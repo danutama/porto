@@ -309,6 +309,11 @@ nav {
 /* ==================== END =================== */
 
 /* ==================== EXPERIENCE =================== */
+.experience-card {
+  background: var(--body-second);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
 .experience-image {
   width: 100%;
   max-width: 80px;
@@ -318,6 +323,7 @@ nav {
   color: var(--black-white);
 }
 
+.experience-tag,
 p.experience-list {
   font-size: 13px;
 }
@@ -325,7 +331,6 @@ p.experience-list {
 .experience-text {
   color: var(--black-white);
   font-size: 15px;
-  font-weight: 300;
   line-height: 25px;
 }
 
