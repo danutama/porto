@@ -11,8 +11,10 @@
 }
 
 .dark-theme {
-  --body: #131022;
-  --body-second: #211c3b;
+  /* --body: #131022;
+  --body-second: #17142a; */
+  --body: #0B0F19;
+  --body-second: #151822;
   --black-white: #ffffff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #211c3b;
@@ -354,7 +356,7 @@ p.experience-list {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  background-color: rgba(74, 247, 250, 0.2);
+  background-color: rgba(74, 197, 250, 0.3);
   position: absolute;
   right:-10%;
   top:-10%;
