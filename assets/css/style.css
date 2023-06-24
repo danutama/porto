@@ -301,7 +301,7 @@ nav {
 .github-profile {
   font-size: 13px;
   color: #fff;
-  background: #333333;
+  background: #2d2d2d;
 }
 
 .about-text {
@@ -351,6 +351,10 @@ p.experience-list {
 
 .accordion-button[aria-expanded="true"] .fas.fa-chevron-down {
   transform: rotate(180deg);
+}
+
+.accordion-collapse {
+  transition: height 0.2s ease !important;
 }
 
 .circle-shape {
