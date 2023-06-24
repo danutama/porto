@@ -448,6 +448,27 @@ footer {
   color: var(--black-white);
 }
 
+/* FOOTER LOGO ANIMATION */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.footer-logo img {
+  transition: transform 0.5s ease;
+}
+
+.footer-logo:hover img {
+  animation: spin 2s linear infinite;
+  animation-fill-mode: forwards;
+}
+/* END */
+
+/* SCROLL TOP BTN ANIMATION */
 @keyframes movingDot {
   0% {
     transform: translateY(100%);
@@ -476,6 +497,7 @@ footer {
   background-color: var(--hover);
   animation: movingDot var(--animation-duration, 3s) linear infinite;
 }
+/* END */
 
 .footer a {
   color: var(--black-white);
