@@ -377,9 +377,36 @@ p.experience-list {
 /* ==================== END =================== */
 
 /* ==================== PROJECT =================== */
-.project-wrap {
+/* .project-wrap {
   display: none;
+} */
+
+/* MIXITUP BTN CONTROL */
+.project-menu {
+  overflow-x: auto;
+  white-space: nowrap;
 }
+
+.project-menu button.mixitup-control-active,
+.project-menu button.mixitup-control-active:hover,
+.project-menu button.mixitup-control-active:focus {
+  border-bottom: 2px solid var(--gray-dark) !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+
+.project-menu button,
+.project-menu button:active,
+.project-menu button:hover,
+.project-menu button:focus {
+  color: var(--gray-dark) !important;
+  border-bottom: 2px solid transparent !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
+}
+/* --- */
 
 .project-card {
   background: var(--body-second);
@@ -387,11 +414,11 @@ p.experience-list {
   border: none;
 }
 
-.project-wrap:nth-child(1),
+/* .project-wrap:nth-child(1),
 .project-wrap:nth-child(2),
 .project-wrap:nth-child(3) {
   display: inline-block;
-}
+} */
 
 .project-card img {
   position: relative;
@@ -449,22 +476,12 @@ footer {
 }
 
 /* FOOTER LOGO ANIMATION */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 .footer-logo img {
   transition: transform 0.5s ease;
 }
 
 .footer-logo:hover img {
-  animation: spin 2s linear infinite;
-  animation-fill-mode: forwards;
+  transform: rotateZ(360deg);
 }
 /* END */
 
