@@ -398,10 +398,6 @@ p.experience-list {
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
-  background-image: linear-gradient(to right, #6366f1, #0094bd);
-  background-clip: text;
-  -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
-  color: transparent;
 }
 
 .project-menu button,
@@ -462,6 +458,10 @@ p.experience-list {
 /* .action-title {
   line-height: 45px;
 } */
+
+.action-background {
+  background-color: rgba(128, 189, 255, 0.1);
+}
 
 .action-circle {
   width: 230px;
