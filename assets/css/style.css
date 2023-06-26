@@ -398,6 +398,10 @@ p.experience-list {
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
+  background-image: linear-gradient(to right, #6366f1, #0094bd);
+  background-clip: text;
+  -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
+  color: transparent;
 }
 
 .project-menu button,
@@ -458,6 +462,16 @@ p.experience-list {
 /* .action-title {
   line-height: 45px;
 } */
+
+.action-circle {
+  width: 230px;
+  height: 230px;
+  background: rgba(0, 255, 183, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  left: -5%;
+  bottom: -15%;
+}
 
 .act-btn,
 .act-btn:hover,
