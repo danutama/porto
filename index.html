@@ -94,6 +94,12 @@
       </div>
     </nav>
   </header>
+
+  <div class="loading">
+    <img src="assets/img/logo.png" alt="Danu Pratama" style="width:35%;">
+    <span class="position-absolute bottom-0 pb-4">Portfolio version 2</span>
+  </div>
+
   <main>
     <section id="home" class="text-center">
 
@@ -692,7 +698,15 @@
     $(window).on('hashchange', function (e) {
     history.replaceState("", document.title, e.originalEvent.oldURL);
     });
-    //
+    // end
+
+    // Loading page
+    $(window).on('load', function() {
+      setTimeout(function() {
+          $('.loading').fadeOut(200);
+      }, 2000); // delay selama 3 detik
+    });
+    // end
 
     // LIVE TIME
     window.onload = function() { time(); }
@@ -712,7 +726,7 @@
         e = e < 10 ? '0'+ e : e;
         return e;
     }
-    //
+    // END
 
     // MIXITUP JS PLUGIN
       $(document).ready(function () {
