@@ -387,6 +387,10 @@ p.experience-list {
   white-space: nowrap;
 }
 
+.project-menu::-webkit-scrollbar {
+  display: none !important;
+}
+
 .project-menu button.mixitup-control-active,
 .project-menu button.mixitup-control-active:hover,
 .project-menu button.mixitup-control-active:focus {
