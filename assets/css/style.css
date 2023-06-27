@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
 :root {
   --body: #ffffff;
   --body-second: #ffffff;
@@ -317,7 +319,7 @@ nav {
 }
 
 .code-header {
-  background: #282936;
+  background: #151822;
   padding: 12px 15px;
   border-radius: 8px 8px 0 0;
 }
@@ -330,7 +332,7 @@ nav {
 }
 
 .code-wrapper {
-  background-color: #282936;
+  background-color: #151822;
   border-radius: 0 0 8px 8px;
   padding: 2px 15px;
 }
