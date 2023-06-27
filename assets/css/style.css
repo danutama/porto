@@ -308,6 +308,33 @@ nav {
 .home-btn:hover {
   color: var(--black-white);
 }
+
+/* HIGHLIGHT CODE */
+.code-container {
+  width: 100%;
+  max-width: 700px;
+  overflow-x: auto;
+}
+
+.code-header {
+  background: #151822;
+  padding: 12px 16px;
+  border-radius: 8px 8px 0 0;
+}
+
+.code-header span {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.code-wrapper pre {
+  background-color: #151822;
+  padding: 8px 15px !important;
+  border-radius: 0 0 8px 8px;
+}
+
 /* ==================== END =================== */
 
 /* ==================== ABOUT =================== */
