@@ -636,7 +636,7 @@ footer {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 40px;
+    width: 60px;
     height: 4px;
     border-radius: 0 0 5px 5px;
     background-color: var(--primary);
@@ -691,9 +691,6 @@ footer {
     bottom: 0;
     border-radius: 25px 25px 0 0;
     padding: 0 10px !important;
-    box-shadow: -1px 3px 31px -5px rgba(125,141,255,0.51);
-    -webkit-box-shadow: -1px 3px 31px -5px rgba(125,141,255,0.51);
-    -moz-box-shadow: -1px 3px 31px -5px rgba(125,141,255,0.51);
   }
 
   .modal-body {
