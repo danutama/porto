@@ -639,6 +639,10 @@ footer {
     overflow-y: auto;
   }
 
+  .modal-backdrop {
+    transition: none !important;
+  }
+
   .modal-dialog.modal-dialog-centered.modal-dialog-scrollable {
     transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
     max-height: calc(100% - 3rem);
@@ -668,14 +672,14 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 13px 13px 0 0;
+    border-radius: 15px 15px 0 0;
     padding: 0 10px !important;
   }
 
   .modal-body {
     overflow-x: auto !important;
     white-space: nowrap !important;
-    padding: 0 8px !important;
+    padding: 15px 8px 0 8px !important;
   }
 
   .modal-body ul {
