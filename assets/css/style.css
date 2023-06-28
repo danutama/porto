@@ -6,7 +6,7 @@
   --black-white: #000;
   --gray-hover: hsla(188, 100%, 50%, 0.2);
   --gray-second: rgb(112, 112, 112);
-  --gray-dark: #6366f1;
+  --primary: #6366f1;
   --hover: #6366f1;
   --gray-light: #eeeff1;
   --light-dark: #ffffff;
@@ -109,7 +109,7 @@ nav {
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: var(--gray-dark);
+  color: var(--primary);
 }
 
 .dark i {
@@ -259,7 +259,7 @@ nav {
 .btn-modal {
   padding: 12px 30px;
   text-decoration: none;
-  background: var(--gray-dark);
+  background: var(--primary);
   color: #fff;
   transition: all .2s;
   box-shadow: 0px 5px 13px rgba(0, 0, 255, 0.3) !important;
@@ -267,7 +267,7 @@ nav {
 
 .btn-modal:hover,
 .btn-modal:active {
-  background: var(--gray-dark) !important;
+  background: var(--primary) !important;
   color: #fff !important;
   box-shadow: none !important;
 }
@@ -277,7 +277,7 @@ nav {
 }
 
 .modal-title {
-  /* color: var(--gray-dark); */
+  /* color: var(--primary); */
   background-image: linear-gradient(to right, #6366f1, #0094bd);
   background-clip: text;
   -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
@@ -420,7 +420,7 @@ p.experience-list {
 }
 
 .custom-tooltip {
-  --bs-tooltip-bg: var(--gray-dark);
+  --bs-tooltip-bg: var(--primary);
 }
 /* ==================== END =================== */
 
@@ -442,7 +442,7 @@ p.experience-list {
 .project-menu button.mixitup-control-active,
 .project-menu button.mixitup-control-active:hover,
 .project-menu button.mixitup-control-active:focus {
-  border-bottom: 2px solid var(--gray-dark) !important;
+  border-bottom: 2px solid var(--primary) !important;
   border-top: 0 !important;
   border-left: 0 !important;
   border-right: 0 !important;
@@ -452,7 +452,7 @@ p.experience-list {
 .project-menu button:active,
 .project-menu button:hover,
 .project-menu button:focus {
-  color: var(--gray-dark) !important;
+  color: var(--primary) !important;
   border-bottom: 2px solid transparent !important;
   border-top: 0 !important;
   border-left: 0 !important;
@@ -525,7 +525,7 @@ p.experience-list {
 .act-btn:hover,
 .act-btn:active,
 .act-btn:focus {
-  background: var(--gray-dark);
+  background: var(--primary);
   color: #ffffff;
 }
 
@@ -668,12 +668,14 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 10px 10px 0 0;
+    border-radius: 13px 13px 0 0;
+    padding: 0 10px !important;
   }
 
   .modal-body {
     overflow-x: auto !important;
     white-space: nowrap !important;
+    padding: 0 8px !important;
   }
 
   .modal-body ul {
@@ -692,7 +694,7 @@ footer {
     border-bottom: 0 !important;
     padding: 0 !important;
   }
-  /* === END === */
+  /* === MODAL END === */
 
   .pattern1 {
     width: 40%;
