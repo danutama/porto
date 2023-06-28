@@ -631,6 +631,28 @@ footer {
   }
 
   /* === MODAL BOOTSTRAP CUSTOM === */
+  .modal-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 4px;
+    border-radius: 0 0 5px 5px;
+    background-color: var(--primary);
+  }
+  
+  .modal-icon span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary);
+  }
+
   .modal {
     position: fixed;
     bottom: 0;
@@ -667,14 +689,21 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    border-radius: 15px 15px 0 0;
+    border-radius: 25px 25px 0 0;
     padding: 0 10px !important;
+    box-shadow: -1px 3px 31px -5px rgba(125,141,255,0.51);
+    -webkit-box-shadow: -1px 3px 31px -5px rgba(125,141,255,0.51);
+    -moz-box-shadow: -1px 3px 31px -5px rgba(125,141,255,0.51);
   }
 
   .modal-body {
     overflow-x: auto !important;
     white-space: nowrap !important;
     padding: 15px 8px 0 8px !important;
+  }
+
+  .modal-body::-webkit-scrollbar {
+    display: none !important;
   }
 
   .modal-body ul {
