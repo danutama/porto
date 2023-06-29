@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="assets/css/vs2015.css" />
 
   <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
 </head>
 
 <body>
@@ -664,6 +666,13 @@
         </div>
       </div>
     </section>
+
+    <!-- 3D GLOBE THREE.JS -->
+    <section id="globe-section" class="pe-4 py-0 mb-0">
+      <div id="globe-container" class="container pe-3 py-0"></div>
+    </section>
+    <!-- END -->
+
   </main>
 
   <footer class="text-center">
@@ -766,6 +775,74 @@
       });
     // END
   </script>
+
+  <script>
+  // Inisialisasi Three.js
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000); // Menggunakan aspect ratio 1 untuk ukuran kotak viewport
+  const renderer = new THREE.WebGLRenderer({ alpha: true }); // Mengaktifkan alpha channel
+  const container = document.getElementById('globe-container');
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  renderer.setClearColor(0x000000, 0); // Mengatur clear color menjadi transparan
+  container.appendChild(renderer.domElement);
+
+  // Membuat bola dunia
+  const geometry = new THREE.SphereGeometry(5, 32, 32);
+  const textureLoader = new THREE.TextureLoader();
+  const texture = textureLoader.load('assets/img/globe.jpg');
+  const material = new THREE.MeshBasicMaterial({ map: texture, transparent: true }); // Mengaktifkan transparansi pada material
+  const globe = new THREE.Mesh(geometry, material);
+  scene.add(globe);
+
+  // Menentukan koordinat posisi tanda di bagian Indonesia
+  const markerPosition = new THREE.Vector3(0.5, 0.5, 0.5); // Ganti dengan koordinat posisi tanda yang diinginkan
+
+  // Membuat tanda posisi di bagian Indonesia
+  const markerGeometry = new THREE.SphereGeometry(0.1, 8, 8);
+  const markerMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+  const marker = new THREE.Mesh(markerGeometry, markerMaterial);
+  marker.position.copy(markerPosition);
+  globe.add(marker);
+
+  // Mengatur posisi kamera
+  camera.position.z = 10;
+
+  // Mengatur ukuran viewport saat window diubah ukurannya
+  window.addEventListener('resize', function () {
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    camera.aspect = container.clientWidth / container.clientHeight;
+    camera.updateProjectionMatrix();
+  });
+
+  // Fungsi animasi render
+  function animate() {
+    requestAnimationFrame(animate);
+    globe.rotation.y += 0.01;
+    renderer.render(scene, camera);
+  }
+
+  // Fungsi untuk menangani efek hover mouse
+  function handleHover(event) {
+    event.preventDefault();
+    const mouse = new THREE.Vector2();
+    const raycaster = new THREE.Raycaster();
+    const rect = container.getBoundingClientRect();
+    mouse.x = ((event.clientX - rect.left) / container.clientWidth) * 2 - 1;
+    mouse.y = -((event.clientY - rect.top) / container.clientHeight) * 2 + 1;
+    raycaster.setFromCamera(mouse, camera);
+    const intersects = raycaster.intersectObject(globe, true);
+    if (intersects.length > 0) {
+      markerMaterial.color.set(0x00ff00); // Ganti warna tanda saat di-hover
+    } else {
+      markerMaterial.color.set(0xff0000); // Ganti warna tanda saat tidak di-hover
+    }
+  }
+
+  // Mengaktifkan event listener untuk efek hover mouse
+  container.addEventListener('mousemove', handleHover, false);
+
+  animate();
+</script>
 </body>
 
 </html>

@@ -25,6 +25,22 @@
   --hover: #fff12d;
 }
 
+
+/* GLOBE 3D THREE JS */
+#globe-section {
+  height: 320px;
+  background: transparent;
+}
+
+#globe-container {
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+  height: 100%;
+  background: transparent;
+}
+/* END */
+
 /* Global Styling */
 * {
   margin: 0;
@@ -661,6 +677,18 @@ footer {
   /* H2 as Title of Section */
   h2 {
     font-size: 25px;
+  }
+
+  #globe-section {
+    height: 250px;
+  }
+
+  #globe-container {
+    width: 100%;
+    max-width: 230px;
+    max-height: 230px;
+    height: 100%;
+    background: transparent;
   }
 
   /* === MODAL BOOTSTRAP CUSTOM === */
