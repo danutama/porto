@@ -19,27 +19,10 @@
   --body: #0B0F19;
   --body-second: #151822;
   --black-white: #ffffff;
-  --ripple: #fff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #211c3b;
   --hover: #fff12d;
 }
-
-
-/* GLOBE 3D THREE JS */
-#globe-section {
-  height: 320px;
-  background: transparent;
-}
-
-#globe-container {
-  width: 100%;
-  max-width: 300px;
-  max-height: 300px;
-  height: 100%;
-  background: transparent;
-}
-/* END */
 
 /* Global Styling */
 * {
@@ -100,25 +83,26 @@ h2 {
 
 .ripple-hover .ripple {
   position: absolute !important;
+  pointer-events: none;
   border-radius: 50%;
   background: var(--ripple);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  animation: animate .5s linear infinite;
+  animation: animate .5s linear;
+  opacity: 0;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
 }
 
 @keyframes animate {
-
   from {
-      width: 0;
-      height: 0;
-      opacity: .2;
+    opacity: 1;
+    transform: scale(0);
   }
 
   to {
-      width: 500px;
-      height: 500px;
-      opacity: 0;
+    opacity: 0;
+    transform: scale(10);
   }
 }
 /* END */
@@ -677,18 +661,6 @@ footer {
   /* H2 as Title of Section */
   h2 {
     font-size: 25px;
-  }
-
-  #globe-section {
-    height: 250px;
-  }
-
-  #globe-container {
-    width: 100%;
-    max-width: 230px;
-    max-height: 230px;
-    height: 100%;
-    background: transparent;
   }
 
   /* === MODAL BOOTSTRAP CUSTOM === */

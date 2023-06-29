@@ -119,7 +119,7 @@ fetch('https://api.github.com/users/danuapratama/repos')
       this.appendChild(ripples);
       setTimeout(() => {
         ripples.remove();
-      }, 1000);
+      }, 300);
     });
   });
 // === END

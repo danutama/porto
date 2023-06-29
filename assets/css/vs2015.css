@@ -13,7 +13,7 @@
   .hljs-literal,
   .hljs-symbol,
   .hljs-name {
-    color: #787afc;
+    color: #02e683;
   }
   .hljs-link {
     color: #787afc;
@@ -32,7 +32,7 @@
   
   .hljs-string,
   .hljs-meta .hljs-string {
-    color: #ffef96;
+    color: #51dfe6;
   }
   
   .hljs-regexp,
@@ -62,7 +62,7 @@
   .hljs-meta .hljs-keyword,
   
   .hljs-tag {
-    color: #9B9B9B;
+    color: #e2e2e2;
   }
   
   .hljs-variable,
@@ -72,7 +72,7 @@
   
   .hljs-attr,
   .hljs-attribute {
-    color: #01d5ff;
+    color: #e45cff;
   }
   
   .hljs-section {
