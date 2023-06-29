@@ -8,6 +8,7 @@
   --gray-second: rgb(112, 112, 112);
   --primary: #6366f1;
   --hover: #6366f1;
+  --ripple: rgba(0, 0, 0, 0.3);
   --gray-light: #eeeff1;
   --light-dark: #ffffff;
 }
@@ -18,6 +19,7 @@
   --body: #0B0F19;
   --body-second: #151822;
   --black-white: #ffffff;
+  --ripple: #fff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #211c3b;
   --hover: #fff12d;
@@ -73,6 +75,37 @@ h2 {
   color: var(--black-white);
   font-size: 13px;
 }
+
+/* RIPPLE HOVER EFFECT */
+.ripple-hover {
+  position: relative !important;
+  overflow: hidden;
+}
+
+.ripple-hover .ripple {
+  position: absolute !important;
+  border-radius: 50%;
+  background: var(--ripple);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: animate .5s linear infinite;
+}
+
+@keyframes animate {
+
+  from {
+      width: 0;
+      height: 0;
+      opacity: .2;
+  }
+
+  to {
+      width: 500px;
+      height: 500px;
+      opacity: 0;
+  }
+}
+/* END */
 
 /* ==================== NAVBAR =================== */
 nav {
