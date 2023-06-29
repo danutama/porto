@@ -364,6 +364,17 @@ nav {
   height: 10px;
 }
 
+.code-header button,
+.code-header button:active,
+.code-header button:focus {
+  color: #fff !important;
+  background: #282936 !important;
+}
+
+.code-header button:hover {
+  background: #212535 !important;
+}
+
 .code-wrapper {
   background-color: #151822;
   border-radius: 0 0 8px 8px;

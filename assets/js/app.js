@@ -123,3 +123,17 @@ fetch('https://api.github.com/users/danuapratama/repos')
     });
   });
 // === END
+
+// === COPY CODE BTN HIGHLIGHT JS
+document.getElementById('copyButton').addEventListener('click', function() {
+  var codeElement = document.querySelector('.pre-code');
+  var code = codeElement.innerText;
+  var textarea = document.createElement('textarea');
+  textarea.value = code;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  this.innerText = 'Copied!';
+});
+// === END
