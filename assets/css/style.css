@@ -401,12 +401,13 @@ nav {
 .code-header button,
 .code-header button:active,
 .code-header button:focus {
-  color: #fff !important;
-  background: #212535 !important;
+  color: #ededed !important;
+  background: #32394f !important;
 }
 
 .code-header button:hover {
-  background: rgb(33, 37, 53, 0.5) !important;
+  color: #fff !important;
+  background: #1e2231 !important;
 }
 
 .code-wrapper {
@@ -421,7 +422,7 @@ nav {
 
 .code-output span {
   left: 0 !important;
-  font-size: 12px;
+  font-size: 13px;
 }
 /* ==================== END =================== */
 
