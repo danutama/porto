@@ -387,8 +387,8 @@ nav {
 }
 
 .code-header {
-  background: #151822 !important;
-  padding: 12px 15px;
+  background-color: #151822 !important;
+  padding: 10px 15px;
 }
 
 .code-header span {

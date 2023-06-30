@@ -211,16 +211,22 @@
 
           <!---- HIGHLIGHT CODE ---->
           <div class="row code-container rounded-3 border border-secondary p-0 mb-0 position-relative z-2">
-            <div class="code-header pb-2 border-bottom border-secondary d-flex justify-content-between align-items-center">
-              <div class="col text-start">
+            <div class="code-header border-bottom border-secondary d-flex justify-content-between align-items-center">
+              <div class="col-md-4 text-start">
                 <span class="rounded-circle me-1 bg-danger"></span>
                 <span class="rounded-circle me-1 bg-warning"></span>
                 <span class="rounded-circle me-1 bg-info"></span>
               </div>
-              <p class="language m-0 me-2 text-light font-monospace">index.html</p>
-              <button id="copyButton" class="btn btn-sm font-monospace border-0 shadow-none rounded">
-                <i class="fas fa-copy"></i>
-              </button>
+
+              <div class="col-md-4 col text-md-center text-end">
+                <p class="language m-0 me-2 text-light font-monospace">index.html</p>
+              </div>
+
+              <div class="col-md-4 text-end">
+                <button id="copyButton" class="btn btn-sm font-monospace border-0 shadow-none rounded">
+                  <i class="fas fa-copy"></i>
+                </button>
+              </div>
             </div>
             
             <div class="code-wrapper col-md-6 text-start mb-0 rounded-0">
@@ -230,7 +236,7 @@
     &lt;/div&gt;
 
     &lt;div class="col-md-6 code-wrapper"&gt;
-      &lt;pre class="pre-code pt-2 pb-3"&gt;
+      &lt;pre class="pre-code"&gt;
         &lt;code class="html"&gt;&lt;!-- Your code --&gt;&lt;/code&gt;
       &lt;/pre&gt;
     &lt;/div&gt;
