@@ -210,7 +210,7 @@
           <!-- MODAL END -->
 
           <!---- HIGHLIGHT CODE ---->
-          <div class="code-container p-0 mb-0 position-relative z-2">
+          <div class="row code-container rounded-3 border border-secondary p-0 mb-0 position-relative z-2">
             <div class="code-header pb-2 border-bottom border-secondary d-flex justify-content-between align-items-center">
               <div class="col text-start">
                 <span class="rounded-circle me-1 bg-danger"></span>
@@ -223,21 +223,28 @@
               </button>
             </div>
             
-            <div class="code-wrapper text-start mb-0">
-              <pre class="pre-code pt-2 pb-3"><code class="xml">  &lt;!DOCTYPE html&gt;
-  &lt;html lang="en"&gt;
-    &lt;head&gt;
-      &lt;meta charset="UTF-8" /&gt;
-      &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
-      &lt;meta name="description" content="Danu Pratama | Web Developer Based in Jakarta" /&gt;
-      &lt;link rel="canonical" href="https://danupratama.site/porto" /&gt;
-      &lt;title&gt;Danu Pratama&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-      &lt;h1&gt;Hello World!👋&lt;/h1&gt;
-    &lt;/body&gt;
-  &lt;/html&gt;
+            <div class="code-wrapper col-md-6 text-start mb-0 rounded-0">
+              <pre class="pre-code pt-2 pb-3"><code class="xml">  &lt;div class="row code-container rounded-3"&gt;
+    &lt;div class="code-header border-bottom border-secondary d-flex justify-content-between align-items-center"&gt;
+    &lt;!-- Header --&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-md-6 code-wrapper"&gt;
+      &lt;pre class="pre-code pt-2 pb-3"&gt;
+        &lt;code class="html"&gt;&lt;!-- Your code --&gt;&lt;/code&gt;
+      &lt;/pre&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-md-6 code-output d-flex justify-content-center align-items-center"&gt;
+      &lt;img class="w-50 rounded-circle" src="assets/img/headshot.jpg" alt="Danu Pratama" /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
               </code></pre>
+            </div>
+
+            <div class="col-md-6 code-output position-relative overflow-hidden py-md-0 py-4 d-flex justify-content-center align-items-center">
+              <span class="position-absolute top-0 rounded-bottom-3 rounded-start-0 px-2 py-1 text-light bg-secondary bg-opacity-10">Output</span>
+              <img class="w-50 rounded-circle" src="assets/img/avatar.jpg" alt="Danu Pratama" />
             </div>
           </div>
           <!-- END -->
