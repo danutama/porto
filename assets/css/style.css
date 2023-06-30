@@ -322,6 +322,28 @@ nav {
   background: var(--body);
 }
 
+.modal-icon {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  border-radius: 0 0 5px 5px;
+  background: linear-gradient(to right, #6366f1, #0094bd);
+}
+
+.modal-icon span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #6366f1, #0094bd);
+}
+
 .modal-title {
   /* color: var(--primary); */
   background-image: linear-gradient(to right, #6366f1, #0094bd);
@@ -365,9 +387,8 @@ nav {
 }
 
 .code-header {
-  background: #151822;
+  background: #151822 !important;
   padding: 12px 15px;
-  border-radius: 8px 8px 0 0;
 }
 
 .code-header span {
@@ -696,28 +717,6 @@ footer {
   }
 
   /* === MODAL BOOTSTRAP CUSTOM === */
-  .modal-icon {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    border-radius: 0 0 5px 5px;
-    background: linear-gradient(to right, #6366f1, #0094bd);
-  }
-  
-  .modal-icon span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #6366f1, #0094bd);
-  }
-
   .modal {
     position: fixed;
     bottom: 0;
