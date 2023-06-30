@@ -4,6 +4,12 @@
  * https://github.com/highlightjs/highlight.js/src/styles/vs2015.css
  */
 
+ /* line number */
+ .hljs-ln-n::before {
+    color: #6c757d !important;
+  }
+/* --- */
+
  .hljs {
     background: transparent;
     color: #ffffff;

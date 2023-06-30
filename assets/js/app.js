@@ -104,24 +104,24 @@ fetch('https://api.github.com/users/danuapratama/repos')
   });
 
 // === RIPPLE HOVER EFFECT
-  const elements = document.querySelectorAll('.ripple-hover');
+  // const elements = document.querySelectorAll('.ripple-hover');
 
-  elements.forEach(element => {
-    element.addEventListener('mouseenter', function (e) {
-      const x = e.clientX - e.target.offsetLeft;
-      const y = e.clientY - e.target.offsetTop;
+  // elements.forEach(element => {
+  //   element.addEventListener('mouseenter', function (e) {
+  //     const x = e.clientX - e.target.offsetLeft;
+  //     const y = e.clientY - e.target.offsetTop;
 
-      const ripples = document.createElement('span');
-      ripples.className = 'ripple';
-      ripples.style.left = `${x}px`;
-      ripples.style.top = `${y}px`;
+  //     const ripples = document.createElement('span');
+  //     ripples.className = 'ripple';
+  //     ripples.style.left = `${x}px`;
+  //     ripples.style.top = `${y}px`;
 
-      this.appendChild(ripples);
-      setTimeout(() => {
-        ripples.remove();
-      }, 300);
-    });
-  });
+  //     this.appendChild(ripples);
+  //     setTimeout(() => {
+  //       ripples.remove();
+  //     }, 300);
+  //   });
+  // });
 // === END
 
 // === COPY CODE BTN HIGHLIGHT JS

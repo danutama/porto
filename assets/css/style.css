@@ -79,9 +79,22 @@ h2 {
 .ripple-hover {
   position: relative !important;
   overflow: hidden;
+
+  background-position: center;
+  transition: background 0.8s;
 }
 
-.ripple-hover .ripple {
+.ripple-hover:hover {
+  background: #cacaca radial-gradient(circle, transparent 1%, #cacaca 1%) center/15000%;
+}
+
+.ripple-hover:active {
+  background-color: #ededed;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* .ripple-hover .ripple {
   position: absolute !important;
   pointer-events: none;
   border-radius: 50%;
@@ -104,7 +117,7 @@ h2 {
     opacity: 0;
     transform: scale(10);
   }
-}
+} */
 /* END */
 
 /* ==================== NAVBAR =================== */
@@ -344,7 +357,7 @@ nav {
   color: var(--black-white);
 }
 
-/* HIGHLIGHT CODE */
+/* ---- HIGHLIGHT CODE ----- */
 .code-container {
   width: 100%;
   max-width: 700px;
@@ -368,11 +381,11 @@ nav {
 .code-header button:active,
 .code-header button:focus {
   color: #fff !important;
-  background: #282936 !important;
+  background: #212535 !important;
 }
 
 .code-header button:hover {
-  background: #212535 !important;
+  background: rgb(33, 37, 53, 0.5) !important;
 }
 
 .code-wrapper {
