@@ -311,8 +311,7 @@ nav {
   width: 60px;
   height: 4px;
   border-radius: 0 0 5px 5px;
-  /* background: linear-gradient(to right, #6366f1, #0094bd); */
-  background-color: var(--primary);
+  background: linear-gradient(to right, #6366f1, #0094bd);
 }
 
 .modal-icon span {
@@ -327,7 +326,6 @@ nav {
 }
 
 .modal-title {
-  /* color: var(--primary); */
   background-image: linear-gradient(to right, #6366f1, #0094bd);
   background-clip: text;
   -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
@@ -403,6 +401,7 @@ nav {
 }
 
 .code-output span {
+  background-color: #151822;
   left: 0 !important;
   font-size: 13px;
 }
@@ -536,9 +535,7 @@ p.experience-list {
 .project-menu button:focus {
   color: var(--primary) !important;
   border: 2px solid var(--primary) !important;
-  /* border-top: 0 !important;
-  border-left: 0 !important;
-  border-right: 0 !important; */
+  font-size: 15px;
 }
 /* --- */
 
@@ -746,8 +743,8 @@ footer {
     right: 0;
     bottom: 0;
     border-radius: 25px 25px 0 0;
-    border-top: 2px solid var(--primary) !important;
     padding: 10px 10px 0 10px !important;
+    min-height: 480px;
   }
 
   .modal-body {
