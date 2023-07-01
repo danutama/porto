@@ -56,6 +56,7 @@ h2 {
   margin-bottom: 3rem;
 }
 
+/* ------- LOADING SCREEN -------- */
 .loading {
   display: flex;
   flex-direction: column;
@@ -70,10 +71,15 @@ h2 {
   z-index: 9999;
 }
 
+.loading img {
+  width: 40%;
+}
+
 .loading span {
   color: var(--black-white);
   font-size: 13px;
 }
+/* --------- END ---------- */
 
 /* RIPPLE HOVER EFFECT */
 .ripple-hover {
@@ -93,32 +99,6 @@ h2 {
   background-size: 100%;
   transition: background 0s;
 }
-
-/* .ripple-hover .ripple {
-  position: absolute !important;
-  pointer-events: none;
-  border-radius: 50%;
-  background: var(--ripple);
-  animation: animate .5s linear;
-  opacity: 0;
-  width: 100px;
-  height: 100px;
-  margin-top: -50px;
-  margin-left: -50px;
-}
-
-@keyframes animate {
-  from {
-    opacity: 1;
-    transform: scale(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: scale(10);
-  }
-} */
-/* END */
 
 /* ==================== NAVBAR =================== */
 nav {
@@ -271,6 +251,7 @@ nav {
 }
 
 .svg-arrow {
+  transform:rotate(10deg);
   animation: moveUpDown 2s infinite alternate;
   transform-origin: top right;
 }
@@ -508,6 +489,7 @@ p.experience-list {
 
 .custom-tooltip {
   --bs-tooltip-bg: var(--primary);
+  z-index: 1;
 }
 /* ==================== END =================== */
 

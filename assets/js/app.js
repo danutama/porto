@@ -1,3 +1,58 @@
+//*========== KEEP URL ==========*//
+$(window).on('hashchange', function (e) {
+  history.replaceState('', document.title, e.originalEvent.oldURL);
+});
+//*========== END ==========*//
+
+
+
+//*========== LOADING SCREEN ==========*//
+$(window).on('load', function () {
+  setTimeout(function () {
+    $('.loading').fadeOut(200);
+  }, 2000); // delay selama 3 detik
+});
+//*========== END ==========*//
+
+
+
+//*========== SHOW TODAY DATE ==========*//
+const dateElement = document.getElementById('date');
+const options = { month: 'short', day: 'numeric' };
+const today = new Date();
+
+dateElement.innerHTML = today.toLocaleDateString('en-US', options);
+//*========== END ==========*//
+
+
+
+//*========== LIVE TIME ==========*//
+window.onload = function () {
+  time();
+};
+function time() {
+  var e = document.getElementById('time'),
+    d = new Date(),
+    h,
+    m,
+    s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h + ':' + m + ':' + s;
+
+  setTimeout('time()', 1000);
+}
+
+function set(e) {
+  e = e < 10 ? '0' + e : e;
+  return e;
+}
+//*========== END ==========*//
+
+
+
 /*========== SCROLL ACTIVE NAVBAR ==========*/
 const header = document.getElementById('nav');
 const activeHeader = function () {
@@ -7,7 +62,9 @@ const activeHeader = function () {
 window.addEventListener('scroll', activeHeader);
 /*========== END ==========*/
 
-/*===== SCROLL SECTIONS ACTIVE LINK =====*/
+
+
+/*========== SCROLL SECTIONS ACTIVE LINK ==========*/
 function scrollActive() {
   var sections = document.querySelectorAll('section');
 
@@ -28,7 +85,9 @@ function scrollActive() {
 }
 
 window.addEventListener('scroll', scrollActive);
-// ============== END ============== //
+//*========== END ==========*//
+
+
 
 /*========== NAVBAR TOGGLE BTN ==========*/
 // document.addEventListener('DOMContentLoaded', function() {
@@ -41,6 +100,8 @@ window.addEventListener('scroll', scrollActive);
 //   });
 // });
 /*========== END ==========*/
+
+
 
 /*========== DARK LIGHT THEME ==========*/
 const themeButton = document.getElementById('theme-button');
@@ -71,19 +132,58 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+//*========== END ==========*//
 
-// Show todays date
-const dateElement = document.getElementById('date');
-const options = { month: 'short', day: 'numeric' };
-const today = new Date();
 
-dateElement.innerHTML = today.toLocaleDateString('en-US', options);
 
-// ========== Tooltip
+//*========== HIGHLIGHT JS ==========*//
+document.addEventListener('DOMContentLoaded', (event) => {
+  hljs.highlightAll();
+  hljs.initLineNumbersOnLoad();
+});
+//*========== END ==========*//
+
+
+
+//*========== COPY CODE BTN - HIGHLIGHT JS ==========*//
+document.getElementById('copyButton').addEventListener('click', function () {
+  var codeElement = document.querySelector('.pre-code');
+  var code = codeElement.innerText;
+  var textarea = document.createElement('textarea');
+  textarea.value = code;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand('copy');
+  document.body.removeChild(textarea);
+  this.innerText = 'Copied!';
+});
+//*========== END ==========*//
+
+
+
+//*========== MIXITUP JS ==========*//
+$(document).ready(function () {
+  var mixer = mixitup('.project-box', {
+    animation: {
+      duration: 0,
+    },
+    load: {
+      filter: '.php',
+    },
+  });
+});
+//*========== END ==========*//
+
+
+
+//*========== BOOTSTRAP TOOLTIP ==========*//
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+//*========== END ==========*//
 
-// ========== GitHub Repo
+
+
+//*========== GITHUB REPO ==========*//
 fetch('https://api.github.com/users/danuapratama/repos')
   .then((response) => response.json())
   .then((data) => {
@@ -102,38 +202,5 @@ fetch('https://api.github.com/users/danuapratama/repos')
   .catch((error) => {
     console.error(error);
   });
+//*========== END ==========*//
 
-// === RIPPLE HOVER EFFECT
-  // const elements = document.querySelectorAll('.ripple-hover');
-
-  // elements.forEach(element => {
-  //   element.addEventListener('mouseenter', function (e) {
-  //     const x = e.clientX - e.target.offsetLeft;
-  //     const y = e.clientY - e.target.offsetTop;
-
-  //     const ripples = document.createElement('span');
-  //     ripples.className = 'ripple';
-  //     ripples.style.left = `${x}px`;
-  //     ripples.style.top = `${y}px`;
-
-  //     this.appendChild(ripples);
-  //     setTimeout(() => {
-  //       ripples.remove();
-  //     }, 300);
-  //   });
-  // });
-// === END
-
-// === COPY CODE BTN HIGHLIGHT JS
-document.getElementById('copyButton').addEventListener('click', function() {
-  var codeElement = document.querySelector('.pre-code');
-  var code = codeElement.innerText;
-  var textarea = document.createElement('textarea');
-  textarea.value = code;
-  document.body.appendChild(textarea);
-  textarea.select();
-  document.execCommand('copy');
-  document.body.removeChild(textarea);
-  this.innerText = 'Copied!';
-});
-// === END
