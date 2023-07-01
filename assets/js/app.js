@@ -161,6 +161,33 @@ document.getElementById('copyButton').addEventListener('click', function () {
 
 
 
+//*========== HOVER IMAGE - HIGHLIGHT CODE ==========*//
+const gambar = document.getElementById('codeImage');
+
+gambar.addEventListener('mousemove', rotateImage);
+
+function rotateImage(e) {
+  const gambarRect = gambar.getBoundingClientRect();
+  const gambarCenterX = gambarRect.left + gambarRect.width / 2;
+  const gambarCenterY = gambarRect.top + gambarRect.height / 2;
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
+  const angleX = (mouseX - gambarCenterX) / gambarRect.width * 30;
+  const angleY = (gambarCenterY - mouseY) / gambarRect.height * 30;
+  const angleZ = Math.atan2(mouseY - gambarCenterY, mouseX - gambarCenterX) * (180 / Math.PI);
+
+  gambar.style.transform = `rotateX(${angleY}deg) rotateY(${angleX}deg) rotateZ(${angleZ}deg)`;
+}
+
+gambar.addEventListener('mouseleave', resetRotation);
+
+function resetRotation() {
+  gambar.style.transform = 'none';
+}
+//*========== END ==========*//
+
+
+
 //*========== MIXITUP JS ==========*//
 $(document).ready(function () {
   var mixer = mixitup('.project-box', {

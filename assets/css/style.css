@@ -117,7 +117,7 @@ nav {
 .nav-item a.active {
   color: var(--black-white) !important;
   font-weight:normal !important;
-  background: var(--gray-hover);
+  /* background: var(--gray-hover); */
 }
 
 .navitem {
@@ -405,6 +405,10 @@ nav {
   left: 0 !important;
   font-size: 13px;
 }
+
+.code-output #codeImage {
+  transition: transform 0.5s;
+}
 /* ==================== END =================== */
 
 /* ==================== ABOUT =================== */
@@ -440,7 +444,11 @@ nav {
   color: var(--black-white);
 }
 
-.experience-tag,
+.experience-tag {
+  font-size: 13px;
+  background-color: #1e2231;
+}
+
 p.experience-list {
   font-size: 13px;
 }
@@ -590,14 +598,6 @@ p.experience-list {
   bottom: -15%;
 }
 
-.act-btn,
-.act-btn:hover,
-.act-btn:active,
-.act-btn:focus {
-  background: var(--primary);
-  color: #ffffff;
-}
-
 .action-img {
   width: 100%;
   max-width: 450px;
@@ -690,6 +690,10 @@ footer {
   .dark {
     text-align: end;
     margin-right: 10px;
+  }
+
+  .btn-modal {
+    font-size: 15px !important;
   }
 }
 
@@ -789,10 +793,6 @@ footer {
     font-size: 13px;
   }
 
-  #home .btn-modal {
-    font-size: 13px;
-  }
-
   .about-text {
     font-size: 14px;
     line-height: 27px;
@@ -800,10 +800,6 @@ footer {
 
   .action-img {
     max-width: 400px;
-  }
-
-  #action .act-btn {
-    font-size: 14px;
   }
 
   .footer a {
