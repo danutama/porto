@@ -3,6 +3,7 @@
 :root {
   --body: #ffffff;
   --body-second: #ffffff;
+  --third: #fff;
   --black-white: #000;
   --gray-hover: hsla(188, 100%, 50%, 0.2);
   --gray-second: rgb(112, 112, 112);
@@ -18,6 +19,7 @@
   --body-second: #17142a; */
   --body: #0B0F19;
   --body-second: #151822;
+  --third: #1e2231;
   --black-white: #ffffff;
   --gray-second: rgb(176, 176, 176);
   --gray-light: #211c3b;
@@ -141,7 +143,7 @@ nav {
 .dark i {
   font-size: 20px;
   padding: 5px;
-  margin-top: 1.5px;
+  margin-top: 1px;
   /* background: var(--hover); */
   color: var(--hover);
   cursor: pointer;
@@ -300,7 +302,7 @@ nav {
 }
 
 .modal-contact {
-  background: var(--body);
+  background: var(--third);
 }
 
 .modal-icon {
@@ -322,7 +324,7 @@ nav {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: var(--primary);
+  background: linear-gradient(to right, #6366f1, #0094bd);
 }
 
 .modal-title {
@@ -582,22 +584,35 @@ p.experience-list {
 /* ==================== END =================== */
 
 /* ==================== ACTION =================== */
-/* .action-title {
-  line-height: 45px;
-} */
-
-.action-background {
-  background-color: rgba(109, 180, 255, 0.1);
+.action-title {
+  /* line-height: 45px; */
+  color: #fff;
 }
 
-.action-circle {
+.action-background {
+  /* background-color: rgba(109, 180, 255, 0.1); */
+  background-color: #0B0F19;
+}
+
+.action-circle-1,
+.action-circle-2 {
+  content: "";
+  filter: blur(100px);
+  background: #6c8eff;
   width: 230px;
   height: 230px;
-  background: rgba(0, 255, 183, 0.2);
   border-radius: 50%;
   position: absolute;
-  left: -5%;
-  bottom: -15%;
+}
+
+.action-circle-1 {
+  left: -15%;
+  top: -15%;
+}
+
+.action-circle-2 {
+  right: -15%;
+  bottom: -15%;   
 }
 
 .action-img {
@@ -696,6 +711,16 @@ footer {
 
   .btn-modal {
     font-size: 15px !important;
+  }
+
+  .action-circle-1 {
+    left: -60%;
+    top: -15%;
+  }
+
+  .action-circle-2 {
+    right: -60%;
+    bottom: -25%;
   }
 }
 
