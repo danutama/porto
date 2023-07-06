@@ -145,7 +145,7 @@ body.no-scroll {
 }
 
 #sheet .contents {
-  border-radius: 1.5rem 1.5rem 0 0;
+  border-radius: 1.2rem 1.2rem 0 0;
 
   background: var(--third);
 
@@ -161,7 +161,7 @@ body.no-scroll {
   height: 30vh;
 
   width: 100%;
-  max-width: 100%;
+  max-width: 70%;
 
   box-sizing: border-box;
   padding: 1rem;
@@ -215,10 +215,6 @@ body.no-scroll {
 #sheet .sheet-body {
   overflow-x: auto !important;
   white-space: nowrap !important;
-}
-
-.sheet-body::-webkit-scrollbar {
-  display: none !important;
 }
 
 .sheet-body ul {
@@ -835,6 +831,15 @@ footer {
 
   .navbar-toggler-icons.fa-bars {
     padding-left: 2px;
+  }
+
+  #sheet .contents {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sheet-body::-webkit-scrollbar {
+    display: none !important;
   }
 
   .dark {
