@@ -480,9 +480,13 @@ nav {
   text-decoration: none;
 }
 
-.home-contact-icon:hover {
+.home-contact-icon small {
+  color: #6c757d;
+}
+
+.home-contact-icon:hover small {
   color: var(--black-white);
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .home-btn,
