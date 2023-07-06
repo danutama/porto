@@ -200,8 +200,8 @@ body.no-scroll {
 
 #sheet .close-sheet {
   position: absolute;
-  left: 20px;
-  top: 1rem;
+  left: 19px;
+  top: .9rem;
   border: none;
   background-color: var(--third);
 }

@@ -57,7 +57,7 @@ const setIsSheetShown = (value) => {
 // Open the sheet when clicking the 'open sheet' button
 openSheetButton.forEach(button => {
   button.addEventListener("click", () => {
-    setSheetHeight(Math.min(50, (720 / window.innerHeight) * 100));
+    setSheetHeight(Math.min(70, (720 / window.innerHeight) * 100));
     setIsSheetShown(true);
   });
 });
@@ -103,7 +103,7 @@ const onDragEnd = () => {
   } else if (sheetHeight > 75) {
     setSheetHeight(100);
   } else {
-    setSheetHeight(50);
+    setSheetHeight(70);
   }
 
   // Prevent scrolling on touch devices after dragging
