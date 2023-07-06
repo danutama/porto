@@ -105,16 +105,71 @@ const onDragEnd = () => {
   } else {
     setSheetHeight(50);
   }
+
+  // Prevent scrolling on touch devices after dragging
+  document.body.style.overflow = 'auto';
 };
 
 draggableArea.addEventListener('mousedown', onDragStart);
-draggableArea.addEventListener('touchstart', onDragStart);
+draggableArea.addEventListener('touchstart', (event) => {
+  onDragStart(event);
+  document.body.style.overflow = 'hidden'; // Prevent scrolling on touch devices during dragging
+});
 
 window.addEventListener('mousemove', onDragMove);
 window.addEventListener('touchmove', onDragMove);
 
 window.addEventListener('mouseup', onDragEnd);
 window.addEventListener('touchend', onDragEnd);
+
+// // Hide the sheet when clicking the background
+// sheet.querySelector('.overlay').addEventListener('click', () => {
+//   setIsSheetShown(false);
+// });
+
+// const touchPosition = (event) => (event.touches ? event.touches[0] : event);
+
+// let dragPosition;
+
+// const onDragStart = (event) => {
+//   dragPosition = touchPosition(event).pageY;
+//   sheetContents.classList.add('not-selectable');
+//   draggableArea.style.cursor = document.body.style.cursor = 'grabbing';
+// };
+
+// const onDragMove = (event) => {
+//   if (dragPosition === undefined) return;
+
+//   const y = touchPosition(event).pageY;
+//   const deltaY = dragPosition - y;
+//   const deltaHeight = (deltaY / window.innerHeight) * 100;
+
+//   setSheetHeight(sheetHeight + deltaHeight);
+//   dragPosition = y;
+// };
+
+// const onDragEnd = () => {
+//   dragPosition = undefined;
+//   sheetContents.classList.remove('not-selectable');
+//   draggableArea.style.cursor = document.body.style.cursor = '';
+
+//   if (sheetHeight < 25) {
+//     setIsSheetShown(false);
+//   } else if (sheetHeight > 75) {
+//     setSheetHeight(100);
+//   } else {
+//     setSheetHeight(50);
+//   }
+// };
+
+// draggableArea.addEventListener('mousedown', onDragStart);
+// draggableArea.addEventListener('touchstart', onDragStart);
+
+// window.addEventListener('mousemove', onDragMove);
+// window.addEventListener('touchmove', onDragMove);
+
+// window.addEventListener('mouseup', onDragEnd);
+// window.addEventListener('touchend', onDragEnd);
 //*========== END ==========*//
 
 
