@@ -185,15 +185,16 @@ body.no-scroll {
   top: 0;
   left: 0;
   right: 0;
-  width: 5rem;
+  width: 2.5rem;
   margin: auto;
-  padding: 1.5rem 1rem 1rem 1rem;
+  padding: 1.4rem 1rem 1rem 1rem;
   cursor: grab;
 }
 
-#sheet .draggable-thumb {
+#sheet .draggable-thumb,
+#sheet .draggable-thumb-2 {
   width: inherit;
-  height: 0.25rem;
+  height: 0.20rem;
   background: var(--black-white);
   border-radius: 5px;
 }
@@ -201,7 +202,7 @@ body.no-scroll {
 #sheet .close-sheet {
   position: absolute;
   left: 19px;
-  top: .9rem;
+  top: 1rem;
   border: none;
   background-color: var(--third);
 }
