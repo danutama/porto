@@ -102,6 +102,128 @@ h2 {
   transition: background 0s;
 }
 
+/* ==================== BOTTOM SHEET =================== */
+#sheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2222;
+  visibility: visible;
+  transition: opacity 0.5s, visibility 0.5s;
+  padding: 0 !important;
+}
+
+#sheet[aria-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+#sheet .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #000000;
+  opacity: 0.5;
+}
+
+#sheet .contents {
+  border-radius: 1.5rem 1.5rem 0 0;
+
+  background: var(--third);
+
+  position: relative;
+  overflow-y: hidden;
+
+  --default-transitions: transform 0.5s, border-radius 0.5s;
+
+  transition: var(--default-transitions);
+  transform: translateY(0);
+
+  max-height: 100vh;
+  height: 30vh;
+
+  width: 100%;
+  max-width: 100%;
+
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 3rem;
+}
+
+#sheet .contents:not(.not-selectable) {
+  transition: var(--default-transitions), height 0.5s;
+}
+
+#sheet .contents.fullscreen {
+  border-radius: 0;
+}
+
+#sheet[aria-hidden="true"] .contents {
+  transform: translateY(100%);
+}
+
+#sheet .draggable-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 5rem;
+  margin: auto;
+  padding: 1.5rem 1rem 1rem 1rem;
+  cursor: grab;
+}
+
+#sheet .draggable-thumb {
+  width: inherit;
+  height: 0.25rem;
+  background: var(--black-white);
+  border-radius: 5px;
+}
+
+#sheet .close-sheet {
+  position: absolute;
+  left: 20px;
+  top: 1rem;
+  border: none;
+  background-color: var(--third);
+}
+
+#sheet .body {
+  height: 100%;
+  overflow-y: auto;
+  gap: 1rem;
+}
+
+#sheet .sheet-body {
+  overflow-x: auto !important;
+  white-space: nowrap !important;
+  padding: 15px 8px 0 8px !important;
+}
+
+.sheet-body::-webkit-scrollbar {
+  display: none !important;
+}
+
+.sheet-body ul {
+  display: inline-block !important;
+  width: 100% !important;
+  padding: 0 !important;
+}
+
+.sheet-body ul li {
+  display: inline-block !important;
+  white-space: normal !important;
+  padding: 0 !important;
+}
+/* ==================== END =================== */
+
+
 /* ==================== NAVBAR =================== */
 nav {
   background: var(--body);
@@ -313,7 +435,7 @@ nav {
   width: 60px;
   height: 4px;
   border-radius: 0 0 5px 5px;
-  background: linear-gradient(to right, #6366f1, #0094bd);
+  background: var(--black-white);
 }
 
 .modal-icon span {
@@ -324,14 +446,14 @@ nav {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: linear-gradient(to right, #6366f1, #0094bd);
+  background: var(--black-white);
 }
 
 .modal-title {
-  background-image: linear-gradient(to right, #6366f1, #0094bd);
+  /* background-image: linear-gradient(to right, #6366f1, #0094bd);
   background-clip: text;
-  -webkit-background-clip: text; /* browser Webkit Chrome - Safari */
-  color: transparent;
+  -webkit-background-clip: text; */
+  color: var(--black-white);
 }
 
 .btn-modal-close {
@@ -598,7 +720,7 @@ p.experience-list {
 .action-circle-2 {
   content: "";
   filter: blur(100px);
-  background: #6c8eff;
+  background: #829fff;
   width: 230px;
   height: 230px;
   border-radius: 50%;
