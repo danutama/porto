@@ -178,7 +178,61 @@ h2 {
 }
 /* --------- END ---------- */
 
-/* RIPPLE HOVER EFFECT */
+/* --------- DARKLIGHT THEME SWITCH TOGGLE---------- */
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 2.5em;
+  height: 1.5em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  --background: #1e2231;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--background);
+  transition: .5s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  left: 10%;
+  bottom: 15%;
+  box-shadow: inset 8px -4px 0px 0px #fff000;
+  background: var(--background);
+  transition: .5s;
+}
+
+input:checked + .slider {
+  background-color: #1e2231;
+}
+
+input:checked + .slider:before {
+  transform: translateX(100%);
+  box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+/* --------- END ---------- */
+
+/* ========= RIPPLE HOVER EFFECT ========== */
 .ripple-hover {
   position: relative !important;
   overflow: hidden;
@@ -298,7 +352,7 @@ body.no-scroll {
   left: 19px;
   top: 1rem;
   border: none;
-  background-color: var(--third);
+  background-color: var(--body-second);
 }
 
 #sheet .body {
@@ -364,14 +418,13 @@ nav {
   color: var(--primary);
 }
 
-.dark i {
+/* .dark i {
   font-size: 20px;
   padding: 5px;
   margin-top: 1px;
-  /* background: var(--hover); */
   color: var(--hover);
   cursor: pointer;
-}
+} */
 /* ==================== END =================== */
 
 
