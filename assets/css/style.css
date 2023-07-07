@@ -34,7 +34,7 @@
   color: var(--black-white);
 }
 .color-purple {
-  color: #7300ff;
+  color: #933aff;
 }
 /* --- */
 
@@ -201,7 +201,7 @@ h2 {
   right: 0;
   bottom: 0;
   background-color: #1e2231;
-  transition: .4s;
+  transition: .3s;
   border-radius: 30px;
 }
 
@@ -215,7 +215,7 @@ h2 {
   bottom: 3px;
   z-index: 2;
   background-color: #fff;
-  transition: .4s;
+  transition: .3s;
 }
 
 .sun svg {
@@ -238,7 +238,7 @@ h2 {
 }
 
 .input:checked + .slider {
-  background-color: rgba(37, 153, 255, 0.1);
+  background-color: #404e81;
 }
 
 .input:focus + .slider {
