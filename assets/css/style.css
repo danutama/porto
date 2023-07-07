@@ -179,56 +179,74 @@ h2 {
 /* --------- END ---------- */
 
 /* --------- DARKLIGHT THEME SWITCH TOGGLE---------- */
-/* The switch - the box around the slider */
 .switch {
   font-size: 17px;
   position: relative;
   display: inline-block;
-  width: 2.5em;
-  height: 1.5em;
+  width: 2.6em;
+  height: 1.4em;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
-  --background: #1e2231;
   position: absolute;
   cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--background);
-  transition: .5s;
+  background-color: #1e2231;
+  transition: .4s;
   border-radius: 30px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 1em;
-  width: 1em;
-  border-radius: 50%;
-  left: 10%;
-  bottom: 15%;
-  box-shadow: inset 8px -4px 0px 0px #fff000;
-  background: var(--background);
-  transition: .5s;
+  height: 18px;
+  width: 18px;
+  border-radius: 20px;
+  left: 3px;
+  bottom: 3px;
+  z-index: 2;
+  background-color: #fff;
+  transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: #1e2231;
+.sun svg {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
 }
 
-input:checked + .slider:before {
-  transform: translateX(100%);
-  box-shadow: inset 15px -4px 0px 15px #fff000;
+.moon svg {
+  fill: #ffd43b;
+  position: absolute;
+  top: 4px;
+  left: 23px;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+}
+
+.input:checked + .slider {
+  background-color: rgba(37, 153, 255, 0.1);
+}
+
+.input:focus + .slider {
+  box-shadow: 0 0 1px #1e2231;
+}
+
+.input:checked + .slider:before {
+  transform: translateX(20px);
 }
 /* --------- END ---------- */
 

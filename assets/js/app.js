@@ -213,7 +213,7 @@ window.addEventListener('scroll', scrollActive);
 
 
 /*========== DARK LIGHT THEME ==========*/
-const themeToggle = document.getElementById('dark-toggle');
+const themeToggle = document.querySelector('.switch input');
 const darkThemeClass = 'dark-theme';
 
 const toggleDarkTheme = () => {
