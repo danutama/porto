@@ -26,6 +26,18 @@
   --hover: #fff12d;
 }
 
+/* Global Class */
+.color-violet {
+  color: #8f33ff;
+}
+.color-black-white {
+  color: var(--black-white);
+}
+.color-purple {
+  color: #7300ff;
+}
+/* --- */
+
 /* Global Styling */
 * {
   margin: 0;
@@ -80,6 +92,89 @@ h2 {
 .loading span {
   color: var(--black-white);
   font-size: 13px;
+}
+
+.loader {
+  position: absolute;
+  top: 3rem;
+  animation: rotate 1s infinite;
+  height: 50px;
+  width: 50px;
+}
+
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  content: '';
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.loader:before {
+  animation: ball1 1s infinite;
+  background-color: var(--primary);
+  box-shadow: 30px 0 0 #ffea07;
+  margin-bottom: 10px;
+}
+
+.loader:after {
+  animation: ball2 1s infinite;
+  background-color: #51dfe6;
+  box-shadow: 30px 0 0 #53ff0f;
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0.8);
+    -moz-transform: rotate(0deg) scale(0.8);
+  }
+
+  50% {
+    -webkit-transform: rotate(360deg) scale(1.2);
+    -moz-transform: rotate(360deg) scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: rotate(720deg) scale(0.8);
+    -moz-transform: rotate(720deg) scale(0.8);
+  }
+}
+
+@keyframes ball1 {
+  0% {
+    box-shadow: 30px 0 0 #ffea07;
+  }
+
+  50% {
+    box-shadow: 0 0 0 #ffea07;
+    margin-bottom: 0;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+
+  100% {
+    box-shadow: 30px 0 0 #ffea07;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes ball2 {
+  0% {
+    box-shadow: 30px 0 0 #51dfe6;
+  }
+
+  50% {
+    box-shadow: 0 0 0 #51dfe6;
+    margin-top: -20px;
+    -webkit-transform: translate(15px,15px);
+    -moz-transform: translate(15px, 15px);
+  }
+
+  100% {
+    box-shadow: 30px 0 0 #53ff0f;
+    margin-top: 0;
+  }
 }
 /* --------- END ---------- */
 
@@ -147,7 +242,7 @@ body.no-scroll {
 #sheet .contents {
   border-radius: 1.2rem 1.2rem 0 0;
 
-  background: var(--third);
+  background: var(--body-second);
 
   position: relative;
   overflow-y: hidden;
@@ -194,8 +289,7 @@ body.no-scroll {
 #sheet .draggable-thumb,
 #sheet .draggable-thumb-2 {
   width: inherit;
-  height: 0.20rem;
-  background: var(--black-white);
+  height: 3px;
   border-radius: 5px;
 }
 
