@@ -580,7 +580,7 @@ nav {
   bottom: 0;
 }
 
-@keyframes moveUpDown {
+/* @keyframes moveUpDown {
   0% {
     transform: translateY(-10px);
   }
@@ -593,6 +593,16 @@ nav {
   transform:rotate(10deg);
   animation: moveUpDown 2s infinite alternate;
   transform-origin: top right;
+} */
+
+#lottie-animation {
+  max-width: 6rem;
+}
+
+#lottie-animation path {
+  stroke-width: 30px;
+  stroke: var(--black-white);
+  fill: var(--black-white); /* Mengubah warna isi (fill) elemen SVG dalam animasi menjadi biru */
 }
 
 .home-name,
