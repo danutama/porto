@@ -233,8 +233,8 @@ h2 {
   top: 4px;
   left: 23px;
   z-index: 1;
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 }
 
 .input:checked + .slider {
@@ -595,15 +595,39 @@ nav {
   transform-origin: top right;
 } */
 
-#lottie-animation {
+/* ==== LOTTIE FLOW ANIMATION */
+#lottie-animation1 {
   max-width: 6rem;
 }
 
-#lottie-animation path {
+#lottie-animation1 path {
   stroke-width: 30px;
   stroke: var(--black-white);
-  fill: var(--black-white); /* Mengubah warna isi (fill) elemen SVG dalam animasi menjadi biru */
+  fill: var(--black-white);
 }
+
+#lottie-animation2 {
+  max-width: 1.8rem;
+}
+
+#lottie-animation2 path {
+  stroke-width: 55px;
+  stroke: var(--black-white);
+}
+
+#lottie-animation3 {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  max-width: 5rem;
+  z-index: 3;
+}
+
+#lottie-animation3 path {
+  stroke: #fff;
+  fill: #fff;
+}
+/* =========== */
 
 .home-name,
 .home-subtitle {
@@ -988,37 +1012,6 @@ footer {
 }
 /* END */
 
-/* SCROLL TOP BTN ANIMATION */
-@keyframes movingDot {
-  0% {
-    transform: translateY(100%);
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-}
-
-.scroll-top-btn {
-  padding: 20px 10px;
-  border-color: var(--black-white) !important;
-}
-
-.scroll-top-btn .dot {
-  position: absolute;
-  top: 50%;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: var(--hover);
-  animation: movingDot var(--animation-duration, 3s) linear infinite;
-}
-/* END */
-
 .footer a {
   color: var(--black-white);
   text-decoration: none;
@@ -1081,6 +1074,12 @@ footer {
   .action-circle-2 {
     right: -60%;
     bottom: -25%;
+  }
+
+  #lottie-animation3 {
+    max-width: 4.3rem;
+    top: 10px;
+    left: 20px;
   }
 }
 

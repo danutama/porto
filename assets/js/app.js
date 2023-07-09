@@ -334,11 +334,27 @@ fetch('https://api.github.com/users/danuapratama/repos')
 
 
 //*========== LOTTIEFLOW ICON ANIMATION ==========*//
-var animation = bodymovin.loadAnimation({
-  container: document.getElementById('lottie-animation'),
+var animation1 = bodymovin.loadAnimation({
+  container: document.getElementById('lottie-animation1'),
   renderer: 'svg',
   loop: true,
   autoplay: true,
   path: 'assets/js/lottieflow-attention-07-000000-easey.json'
+})
+
+var animation2 = bodymovin.loadAnimation({
+  container: document.getElementById('lottie-animation2'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/js/lottieflow-scroll-top-01-000000-easey.json'
+})
+
+var animation3 = bodymovin.loadAnimation({
+  container: document.getElementById('lottie-animation3'),
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  path: 'assets/js/lottieflow-chat-17-5-000000-easey.json'
 })
 //*========== END ==========*//
