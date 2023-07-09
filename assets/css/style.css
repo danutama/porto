@@ -590,26 +590,12 @@ nav {
   stroke: var(--black-white);
   fill: var(--black-white);
 }
-
-#lottie-animation2 {
-  max-width: 1.8rem;
-}
-
-#lottie-animation2 path {
-  stroke-width: 55px;
-  stroke: var(--black-white);
-}
 /* =========== */
 
-.home-name,
-.home-subtitle {
-  color: var(--black-white);
-  letter-spacing: 2px;
-}
-
+.home-subtitle,
 .home-time {
   color: var(--black-white);
-  font-size: 14px;
+  letter-spacing: 2px;
 }
 
 .btn-modal {
@@ -695,7 +681,7 @@ nav {
 /* ---- HIGHLIGHT CODE ----- */
 .code-container {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1500px;
   overflow-x: auto;
 }
 
@@ -925,6 +911,34 @@ p.experience-list {
 /* ==================== END =================== */
 
 /* ==================== FOOTER =================== */
+/* SCROLL TOP BTN ANIMATION */
+@keyframes movingDot {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.scroll-top-btn {
+  padding: 20px 10px;
+  border-color: var(--black-white) !important;
+}
+
+.scroll-top-btn .dot {
+  position: absolute;
+  top: 50%;
+  color: var(--black-white);
+  animation: movingDot var(--animation-duration, 3s) linear infinite;
+}
+/* END */
+
 footer {
   /* background: var(--gray-light); */
   color: var(--black-white);

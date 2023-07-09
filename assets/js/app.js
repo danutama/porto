@@ -300,12 +300,4 @@ var animation1 = bodymovin.loadAnimation({
   autoplay: true,
   path: 'assets/js/lottieflow-attention-07-000000-easey.json'
 })
-
-var animation2 = bodymovin.loadAnimation({
-  container: document.getElementById('lottie-animation2'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'assets/js/lottieflow-scroll-top-01-000000-easey.json'
-})
 //*========== END ==========*//
