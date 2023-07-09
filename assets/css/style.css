@@ -427,15 +427,6 @@ nav {
   background: var(--gray-hover);
 }
 
-.navbar-toggler-icons {
-  color: var(--black-white);
-}
-
-.navbar-brand,
-.navbar-brand:hover {
-  color: var(--primary);
-}
-
 /* .dark i {
   font-size: 20px;
   padding: 5px;
@@ -458,9 +449,7 @@ nav {
 }
 
 .hamburger svg {
-  /* The size of the SVG defines the overall size */
   height: 2.3em;
-  /* Define the transition for transforming the SVG */
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -470,7 +459,6 @@ nav {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2.5;
-  /* Define the transition for transforming the Stroke */
   transition: stroke-dasharray 500ms cubic-bezier(0.4, 0, 0.2, 1),
               stroke-dashoffset 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -498,8 +486,7 @@ nav {
 
 .navbar-toggler,
 .navbar-toggler:focus,
-.navbar-toggler:active,
-.navbar-toggler-icon:focus {
+.navbar-toggler:active {
   outline: none;
   box-shadow: none;
   border: 0;
@@ -529,7 +516,6 @@ nav {
 }
 
 /* when navigation is clicked */
-
 .navbar-toggler .top-bar {
   margin-top: 0px;
   transform: rotate(135deg);
@@ -547,7 +533,6 @@ nav {
 }
 
 /* State when the navbar is collapsed */
-
 .navbar-toggler.collapsed .top-bar {
   margin-top: -15px;
   transform: rotate(0deg);
@@ -614,19 +599,6 @@ nav {
   stroke-width: 55px;
   stroke: var(--black-white);
 }
-
-#lottie-animation3 {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  max-width: 5rem;
-  z-index: 3;
-}
-
-#lottie-animation3 path {
-  stroke: #fff;
-  fill: #fff;
-}
 /* =========== */
 
 .home-name,
@@ -635,25 +607,9 @@ nav {
   letter-spacing: 2px;
 }
 
-.home-search {
-  color: var(--black-white);
-  background: var(--body-second);
-  width: 70%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 1px 7px -2px;
-}
-
 .home-time {
   color: var(--black-white);
   font-size: 14px;
-}
-
-.home-search-text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 70%;
-  display: inline-block;
 }
 
 .btn-modal {
@@ -856,16 +812,6 @@ p.experience-list {
 .accordion-collapse {
   transition: height 0.2s ease !important;
 }
-
-.circle-shape {
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background-color: rgba(74, 197, 250, 0.3);
-  position: absolute;
-  right:-10%;
-  top:-10%;
-}
 /* ==================== END =================== */
 
 /* ==================== SKILLS =================== */
@@ -880,10 +826,6 @@ p.experience-list {
 /* ==================== END =================== */
 
 /* ==================== PROJECT =================== */
-/* .project-wrap {
-  display: none;
-} */
-
 /* MIXITUP BTN CONTROL */
 .project-menu {
   overflow-x: auto;
@@ -922,12 +864,6 @@ p.experience-list {
   border: none;
 }
 
-/* .project-wrap:nth-child(1),
-.project-wrap:nth-child(2),
-.project-wrap:nth-child(3) {
-  display: inline-block;
-} */
-
 .project-card img {
   position: relative;
   -webkit-transition: all 0.3s linear;
@@ -940,15 +876,8 @@ p.experience-list {
   transform: scale(1.2);
 }
 
-.project-card-badge {
-  color: var(--black-white);
-  font-weight: normal;
-}
-
-.project-card-body h3 {
-  color: var(--black-white);
-}
-
+.project-card-badge,
+.project-card-body h3,
 .project-card-icon a {
   color: var(--black-white);
 }
@@ -960,7 +889,6 @@ p.experience-list {
 
 /* ==================== ACTION =================== */
 .action-title {
-  /* line-height: 45px; */
   color: #fff;
 }
 
@@ -1012,16 +940,6 @@ footer {
 }
 /* END */
 
-.footer a {
-  color: var(--black-white);
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
 .footer-credit {
   font-size: 15px;
 }
@@ -1042,10 +960,6 @@ footer {
 
   .navitem {
     font-size: 13px;
-  }
-
-  .navbar-toggler-icons.fa-bars {
-    padding-left: 2px;
   }
 
   #sheet .contents {
@@ -1074,12 +988,6 @@ footer {
   .action-circle-2 {
     right: -60%;
     bottom: -25%;
-  }
-
-  #lottie-animation3 {
-    max-width: 4.3rem;
-    top: 10px;
-    left: 20px;
   }
 }
 
@@ -1167,15 +1075,7 @@ footer {
     width: 35%;
   }
 
-  .home-search,
-  .home-time {
-    width: 100%;
-  }
-
-  .home-search-text {
-    max-width: 80%;
-  }
-
+  .home-time,
   .home-subtitle{
     font-size: 13px;
   }
@@ -1189,11 +1089,6 @@ footer {
     max-width: 400px;
   }
 
-  .footer a {
-    font-size: 13px;
-  }
-
-  .home-time,
   .footer-credit {
     font-size: 12px;
   }

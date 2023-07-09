@@ -127,37 +127,10 @@ window.addEventListener('touchend', onDragEnd);
 
 //*========== SHOW TODAY DATE ==========*//
 const dateElement = document.getElementById('date');
-const options = { month: 'short', day: 'numeric' };
+const options = { month: 'long', day: 'numeric' };
 const today = new Date();
 
 dateElement.innerHTML = today.toLocaleDateString('en-US', options);
-//*========== END ==========*//
-
-
-
-//*========== LIVE TIME ==========*//
-window.onload = function () {
-  time();
-};
-function time() {
-  var e = document.getElementById('time'),
-    d = new Date(),
-    h,
-    m,
-    s;
-  h = d.getHours();
-  m = set(d.getMinutes());
-  s = set(d.getSeconds());
-
-  e.innerHTML = h + ':' + m + ':' + s;
-
-  setTimeout('time()', 1000);
-}
-
-function set(e) {
-  e = e < 10 ? '0' + e : e;
-  return e;
-}
 //*========== END ==========*//
 
 
@@ -195,20 +168,6 @@ function scrollActive() {
 
 window.addEventListener('scroll', scrollActive);
 //*========== END ==========*//
-
-
-
-/*========== NAVBAR TOGGLE BTN ==========*/
-// document.addEventListener('DOMContentLoaded', function() {
-//   var navbarToggler = document.querySelector('.navbar-toggler');
-//   var navbarIcon = navbarToggler.querySelector('.navbar-toggler-icons');
-
-//   navbarToggler.addEventListener('click', function() {
-//     navbarIcon.classList.toggle('fa-bars-staggered');
-//     navbarIcon.classList.toggle('fa-bars');
-//   });
-// });
-/*========== END ==========*/
 
 
 
@@ -348,13 +307,5 @@ var animation2 = bodymovin.loadAnimation({
   loop: true,
   autoplay: true,
   path: 'assets/js/lottieflow-scroll-top-01-000000-easey.json'
-})
-
-var animation3 = bodymovin.loadAnimation({
-  container: document.getElementById('lottie-animation3'),
-  renderer: 'svg',
-  loop: true,
-  autoplay: true,
-  path: 'assets/js/lottieflow-chat-17-5-000000-easey.json'
 })
 //*========== END ==========*//
